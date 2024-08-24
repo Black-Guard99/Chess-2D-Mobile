@@ -79,7 +79,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
         return piece.activePos;
     }
     public void CalculateAvailableDirection(){
-        boardPieceHoldersToMove = board.GetRookMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
+        boardPieceHoldersToMove = board.GetRookMoveToDirectionsFromStartingPoint(piece.pieceType,piece.activePos,piece.colorType);
         boardPieceHoldersToMove.ForEach(b => b.HighlightColor(b.IsOpponent(piece.colorType)));
     }
     public void HighlightColor(bool IsOpponentColor){

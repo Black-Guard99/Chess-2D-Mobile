@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Rendering;
+using System.Linq;
 
 public class Board : MonoBehaviour {
-    public static int BOARD_SIZE = 8;
+    public const int BOARD_SIZE = 8;
     [SerializeField] private Canvas canvas;
     [SerializeField] private string findString;
     [SerializeField] private BoardPieceHolder boardPiceView;
@@ -11,6 +11,8 @@ public class Board : MonoBehaviour {
     [SerializeField] private Color lightColor = Color.white,darkColor = Color.black;
     [SerializeField] private RectTransform boardHolder;
     [SerializeField] private BoardPieceHolder[,] board;
+    [SerializeField] private DirectionChecks[] allDirectionsToCheckArray;
+    [SerializeField] private List<BoardPieceHolder> boardPieceHoldersList;
     private void Start() {
         board = new BoardPieceHolder[BOARD_SIZE,BOARD_SIZE];
         SetUp();
@@ -51,15 +53,12 @@ public class Board : MonoBehaviour {
             }
         }
     }
-    [SerializeField] private Vector2[] directionsToCheck;
-    // [SerializeField] private List<Vector2> availableMovesDirection;
-    [SerializeField] private List<BoardPieceHolder> boardPieceHoldersList;
-    public List<BoardPieceHolder> GetRookMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
-
-        // availableMovesDirection = new List<Vector2>();
+    
+    public List<BoardPieceHolder> GetRookMoveToDirectionsFromStartingPoint(PieceType pieceType,Vector2 startingPoint,ColorType friendlyPieceType){
+        DirectionChecks directionChecks = allDirectionsToCheckArray.FirstOrDefault(d => d.pieceType == pieceType);
         boardPieceHoldersList = new List<BoardPieceHolder>();
-        float range = BOARD_SIZE;
-        foreach(var direction in directionsToCheck){
+        float range = directionChecks.maxCheckIteration < 1 ? BOARD_SIZE : directionChecks.maxCheckIteration;
+        foreach(Vector2 direction in directionChecks.checkingDirections){
             for (int i = 1; i < range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
                 Debug.Log("Coord: " + nextCoords);

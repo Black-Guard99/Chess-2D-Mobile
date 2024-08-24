@@ -292,7 +292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -717, y: -733}
+  m_AnchoredPosition: {x: -527, y: -555}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700397526
@@ -310,19 +310,33 @@ MonoBehaviour:
   canvas: {fileID: 1413520231}
   findString: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
   boardPiceView: {fileID: 4393258314341919830, guid: 042caf5efa6fdb14baa8ceb3131832cc, type: 3}
-  squareSize: 200
+  squareSize: 150
   lightColor: {r: 1, g: 1, b: 1, a: 1}
   darkColor: {r: 0.509434, g: 0.30629036, b: 0.2220363, a: 1}
   boardHolder: {fileID: 700397525}
-  directionsToCheck:
-  - {x: 0, y: 1}
-  - {x: 0, y: -1}
-  - {x: 1, y: 0}
-  - {x: -1, y: 0}
-  - {x: 1, y: 1}
-  - {x: 1, y: -1}
-  - {x: -1, y: 1}
-  - {x: -1, y: -1}
+  allDirectionsToCheckArray:
+  - pieceType: 1
+    maxCheckIteration: 2
+    checkingDirections:
+    - {x: 0, y: 1}
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: -1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 1, y: -1}
+    - {x: -1, y: 1}
+    - {x: -1, y: -1}
+  - pieceType: 2
+    maxCheckIteration: 2
+    checkingDirections:
+    - {x: 0, y: 1}
+  - pieceType: 4
+    maxCheckIteration: -1
+    checkingDirections:
+    - {x: 1, y: 1}
+    - {x: 1, y: -1}
+    - {x: -1, y: -1}
+    - {x: -1, y: 1}
   boardPieceHoldersList: []
 --- !u!1 &1413520228
 GameObject:
