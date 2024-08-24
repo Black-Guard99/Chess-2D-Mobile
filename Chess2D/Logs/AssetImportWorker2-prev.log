@@ -1,0 +1,197 @@
+2024-08-24T08:06:11.412Z|0x4008|Using pre-set license
+2024-08-24T08:06:11.413Z|0x4008|Built from '2022.3/staging' branch; Version is '2022.3.42f1 (2dcb6a0abc42) revision 3001194'; Using compiler version '192829333'; Build Type 'Release'
+2024-08-24T08:06:11.413Z|0x4008|OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16068 MB
+2024-08-24T08:06:11.413Z|0x4008|BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+2024-08-24T08:06:11.415Z|0x4008|
+COMMAND LINE ARGUMENTS:
+2024-08-24T08:06:11.415Z|0x4008|C:\Program Files\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe
+2024-08-24T08:06:11.416Z|0x4008|-adb2
+2024-08-24T08:06:11.416Z|0x4008|-batchMode
+2024-08-24T08:06:11.416Z|0x4008|-noUpm
+2024-08-24T08:06:11.416Z|0x4008|-name
+2024-08-24T08:06:11.416Z|0x4008|AssetImportWorker2
+2024-08-24T08:06:11.416Z|0x4008|-projectPath
+2024-08-24T08:06:11.416Z|0x4008|C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess2D
+2024-08-24T08:06:11.416Z|0x4008|-logFile
+2024-08-24T08:06:11.416Z|0x4008|Logs/AssetImportWorker2.log
+2024-08-24T08:06:11.416Z|0x4008|-srvPort
+2024-08-24T08:06:11.416Z|0x4008|52409
+2024-08-24T08:06:11.416Z|0x4008|Successfully changed project path to: C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess2D
+2024-08-24T08:06:11.426Z|0x4008|C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess2D
+2024-08-24T08:06:11.426Z|0x4008|[UnityMemory] Configuration Parameters - Can be set up in boot.config
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-bucket-allocator-granularity=16"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-bucket-allocator-bucket-count=8"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-bucket-allocator-block-size=33554432"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-bucket-allocator-block-count=8"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-main-allocator-block-size=16777216"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-thread-allocator-block-size=16777216"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-gfx-main-allocator-block-size=16777216"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-gfx-thread-allocator-block-size=16777216"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-cache-allocator-block-size=4194304"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-typetree-allocator-block-size=2097152"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-profiler-bucket-allocator-granularity=16"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-profiler-bucket-allocator-block-count=8"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-profiler-allocator-block-size=16777216"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-profiler-editor-allocator-block-size=1048576"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-main=16777216"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-job-temp-allocator-block-size=2097152"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-job-temp-allocator-block-size-background=1048576"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-allocator-temp-initial-block-size-main=262144"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-background-worker=32768"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-job-worker=262144"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-preload-manager=33554432"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-audio-worker=65536"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-cloud-worker=32768"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+2024-08-24T08:06:11.427Z|0x4008|    "memorysetup-temp-allocator-size-gfx=262144"
+2024-08-24T08:06:11.432Z|0x4008|Player connection [16392]  Target information:
+
+2024-08-24T08:06:11.432Z|0x4008|Player connection [16392]  * "[IP] 192.168.246.80 [Port] 0 [Flags] 2 [Guid] 1336105908 [EditorId] 1336105908 [Version] 1048832 [Id] WindowsEditor(7,Abhi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+2024-08-24T08:06:11.434Z|0x4008|Player connection [16392] Host joined multi-casting on [225.0.0.222:54997]...
+2024-08-24T08:06:11.434Z|0x4008|Player connection [16392] Host joined alternative multi-casting on [225.0.0.222:34997]...
+2024-08-24T08:06:11.440Z|0x4008|[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+2024-08-24T08:06:11.521Z|0x4008|Refreshing native plugins compatible for Editor in 15.03 ms, found 4 plugins.
+2024-08-24T08:06:11.521Z|0x4008|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-24T08:06:11.521Z|0x4008|Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
+2024-08-24T08:06:11.521Z|0x4008|[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Resources/UnitySubsystems
+2024-08-24T08:06:11.521Z|0x4008|[Subsystems] Discovering subsystems at path C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess2D/Assets
+2024-08-24T08:06:11.522Z|0x4008|GfxDevice: creating device client; threaded=0; jobified=0
+2024-08-24T08:06:11.679Z|0x4008|Direct3D:
+2024-08-24T08:06:11.679Z|0x4008|    Version:  Direct3D 11.0 [level 11.1]
+2024-08-24T08:06:11.679Z|0x4008|    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+2024-08-24T08:06:11.679Z|0x4008|    Vendor:   NVIDIA
+2024-08-24T08:06:11.679Z|0x4008|    VRAM:     5996 MB
+2024-08-24T08:06:11.679Z|0x4008|    Driver:   32.0.15.6094
+2024-08-24T08:06:11.771Z|0x4008|Initialize mono
+2024-08-24T08:06:11.771Z|0x4008|Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Managed'
+2024-08-24T08:06:11.771Z|0x4008|Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+2024-08-24T08:06:11.771Z|0x4008|Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
+2024-08-24T08:06:11.771Z|0x4008|Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+2024-08-24T08:06:11.820Z|0x4008|Begin MonoManager ReloadAssembly
+2024-08-24T08:06:11.996Z|0x4008|Registering precompiled unity dll's ...
+2024-08-24T08:06:12.000Z|0x4008|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+2024-08-24T08:06:12.002Z|0x4008|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+2024-08-24T08:06:12.004Z|0x4008|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+2024-08-24T08:06:12.009Z|0x4008|Registered in 0.013099 seconds.
+2024-08-24T08:06:12.197Z|0x4008|- Loaded All Assemblies, in  0.378 seconds
+2024-08-24T08:06:12.243Z|0x4008|Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+2024-08-24T08:06:12.247Z|0x4008|Native extension for iOS target not found
+2024-08-24T08:06:12.257Z|0x4008|Native extension for Android target not found
+2024-08-24T08:06:12.604Z|0x4008|Android Extension - Scanning For ADB Devices 298 ms2024-08-24T08:06:12.604Z|0x4008|
+2024-08-24T08:06:12.771Z|0x4008|Mono: successfully reloaded assembly
+2024-08-24T08:06:12.783Z|0x4008|- Finished resetting the current domain, in  0.586 seconds
+2024-08-24T08:06:12.783Z|0x4008|Domain Reload Profiling: 961ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (153ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (136ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (586ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (545ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (406ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (96ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+2024-08-24T08:06:12.949Z|0x4008|========================================================================
+2024-08-24T08:06:12.949Z|0x4008|Worker process is ready to serve import requests
+2024-08-24T08:06:13.818Z|0x4008|Caller must complete domain reload
+2024-08-24T08:06:13.866Z|0x4008|Begin MonoManager ReloadAssembly
+2024-08-24T08:06:14.513Z|0x4008|- Loaded All Assemblies, in  0.647 seconds
+2024-08-24T08:06:14.642Z|0x4008|Native extension for WindowsStandalone target not found
+2024-08-24T08:06:14.644Z|0x4008|Native extension for iOS target not found
+2024-08-24T08:06:14.664Z|0x4008|Native extension for Android target not found
+2024-08-24T08:06:15.060Z|0x4008|Package Manager log level set to [2]
+2024-08-24T08:06:15.060Z|0x4008|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-24T08:06:15.060Z|0x4008|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-24T08:06:15.060Z|0x4008|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-24T08:06:15.172Z|0x4008|Mono: successfully reloaded assembly
+2024-08-24T08:06:15.196Z|0x4008|- Finished resetting the current domain, in  0.682 seconds
+2024-08-24T08:06:15.197Z|0x4008|Domain Reload Profiling: 1324ms
+	BeginReloadAssembly (132ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (438ms)
+		LoadAssemblies (318ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (145ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (682ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (537ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+2024-08-24T08:06:15.507Z|0x4008|Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+2024-08-24T08:06:15.631Z|0x4008|Refreshing native plugins compatible for Editor in 8.71 ms, found 4 plugins.
+2024-08-24T08:06:15.631Z|0x4008|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-24T08:06:15.661Z|0x502c|Unloading 5679 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-24T08:06:15.665Z|0x4008|Unloading 48 unused Assets / (0.9 MB). Loaded Objects now: 6136.
+Memory consumption went from 221.3 MB to 220.4 MB.
+2024-08-24T08:06:15.665Z|0x4008|Total: 4.115800 ms (FindLiveObjects: 0.356000 ms CreateObjectMapping: 0.210400 ms MarkObjects: 3.155200 ms  DeleteObjects: 0.392800 ms)
+
+2024-08-24T08:06:15.668Z|0x4008|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-24T08:06:15.668Z|0x4008|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-24T08:06:15.668Z|0x4008|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-24T08:06:15.668Z|0x4008|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-24T08:06:15.668Z|0x4008|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-24T08:06:15.668Z|0x4008|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-24T08:06:15.669Z|0x4008|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-24T08:07:12.944Z|0x1cc8|Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+2024-08-24T08:07:13.146Z|0x1cc8|TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+2024-08-24T08:07:13.149Z|0x4008|AssetImportWorker is now disconnected from the server
+2024-08-24T08:07:13.149Z|0x4008|Process exiting
+2024-08-24T08:07:13.150Z|0x4008|Exiting without the bug reporter. Application will terminate with return code 0
