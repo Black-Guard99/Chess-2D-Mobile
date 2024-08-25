@@ -41,6 +41,7 @@ public class HoveringPieceView : MonoBehaviour,IBeginDragHandler,IDragHandler,IE
         activeView.SetParent(boardPieceHolder.transform);
         activeView.anchoredPosition = Vector2.zero;
         canvasGroup.blocksRaycasts = true;
+        boardPieceHolder.ResetColor();
     }
     public Piece GetPiece(){
         return holderPieceData;
@@ -50,5 +51,7 @@ public class HoveringPieceView : MonoBehaviour,IBeginDragHandler,IDragHandler,IE
         visual.sprite = sprite;
     }
 
-    
+    public BoardPieceHolder GetBoardPieceHolder() {
+        return boardPieceHolder;
+    }
 }

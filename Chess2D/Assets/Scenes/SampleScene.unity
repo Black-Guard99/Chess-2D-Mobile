@@ -308,7 +308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1413520231}
-  findString: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
   boardPiceView: {fileID: 4393258314341919830, guid: 042caf5efa6fdb14baa8ceb3131832cc, type: 3}
   squareSize: 150
   lightColor: {r: 1, g: 1, b: 1, a: 1}
@@ -364,6 +363,7 @@ GameObject:
   - component: {fileID: 1413520231}
   - component: {fileID: 1413520230}
   - component: {fileID: 1413520229}
+  - component: {fileID: 1413520233}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -454,6 +454,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1413520233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413520228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fabd198f9dfd94ca370b348948e977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 700397526}
+  whitePlayer:
+    colorType: 0
+    allPieces: []
+  blackPlayer:
+    colorType: 0
+    allPieces: []
+  activePlayer:
+    colorType: 0
+    allPieces: []
 --- !u!1 &1763609738
 GameObject:
   m_ObjectHideFlags: 0

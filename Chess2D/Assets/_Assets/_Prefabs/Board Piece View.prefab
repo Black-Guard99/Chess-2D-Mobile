@@ -94,7 +94,7 @@ MonoBehaviour:
   visual: {fileID: 7951065258606375538}
   activeView: {fileID: 6300191631221916836}
   canvasGroup: {fileID: 6203997507056796501}
-  boardPieceHolder: {fileID: 0}
+  boardPieceHolder: {fileID: 4393258314341919830}
   holderPieceData:
     pieceType: 0
     colorType: 0
@@ -201,29 +201,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8855ba6401da93d4e918f67d4d23884a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoveringPieceView: {fileID: 455102948096387056}
   freeSquareHightingColor: {r: 0, g: 1, b: 0, a: 1}
   opponentSquareColor: {r: 1, g: 0, b: 0, a: 1}
+  originalColor: {r: 1, g: 1, b: 1, a: 1}
   indexText: {fileID: 2469346449183817164}
   currentRect: {fileID: 2550529672620525001}
   pieceBg: {fileID: 8915826375019912866}
-  b_king: {fileID: 21300000, guid: e243eb6408882e740a8a5926ae0fe7df, type: 3}
-  w_king: {fileID: 21300000, guid: d4d944fc7d0e3544f891b3d14bba3b1d, type: 3}
-  b_pawn: {fileID: 21300000, guid: c9cd1921a27aef742aa3faca057674e7, type: 3}
-  w_pawn: {fileID: 21300000, guid: e112d624e8d6a8e46a9ec3f8a7020fa0, type: 3}
-  b_knight: {fileID: 21300000, guid: 741a50ed43461ed46bd19a6677755b4a, type: 3}
-  w_knight: {fileID: 21300000, guid: aeef5f97de5dc8049a96ac430b99f094, type: 3}
-  b_bishop: {fileID: 21300000, guid: c814969510411ef479f5babb7eef5622, type: 3}
-  w_bishop: {fileID: 21300000, guid: 2e8e966726087c748ab5d8a8c2adef65, type: 3}
-  b_rook: {fileID: 21300000, guid: 8a0d30b562ee7a84d87b347b6ce43423, type: 3}
-  w_rook: {fileID: 21300000, guid: d9264b6b06db13f48a2c607a798456c5, type: 3}
-  b_queen: {fileID: 21300000, guid: 707e450410e7c09448f3cbe0e76771fd, type: 3}
-  w_queen: {fileID: 21300000, guid: 98fece27f6c7fad439349b1de7b70bc0, type: 3}
-  piece:
-    pieceType: 0
-    colorType: 0
-    activePos: {x: 0, y: 0}
-  hoveringPieceView: {fileID: 455102948096387056}
-  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  b_king: {fileID: 1686377188, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
+  w_king: {fileID: 1095601547, guid: 0312bfc9bb4173f4faa744a68f3c1fb4, type: 3}
+  b_pawn: {fileID: 143238415, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
+  w_pawn: {fileID: -982858841, guid: 0312bfc9bb4173f4faa744a68f3c1fb4, type: 3}
+  b_knight: {fileID: -2081701753, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
+  w_knight: {fileID: -861563092, guid: 0312bfc9bb4173f4faa744a68f3c1fb4, type: 3}
+  b_bishop: {fileID: 1850065099, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
+  w_bishop: {fileID: 1129663902, guid: 0312bfc9bb4173f4faa744a68f3c1fb4, type: 3}
+  b_rook: {fileID: -2034369768, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
+  w_rook: {fileID: -1359497551, guid: 0312bfc9bb4173f4faa744a68f3c1fb4, type: 3}
+  b_queen: {fileID: -1087873133, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
+  w_queen: {fileID: -854153580, guid: 0312bfc9bb4173f4faa744a68f3c1fb4, type: 3}
 --- !u!1 &2733855806314360549
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,10 +252,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6300191631221916836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 5}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4254059329108841321
 CanvasRenderer:
@@ -289,7 +285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c814969510411ef479f5babb7eef5622, type: 3}
+  m_Sprite: {fileID: 143238415, guid: 57a6976dc4400374daf6170b2814a90c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -311,7 +307,7 @@ GameObject:
   - component: {fileID: 3428036558379032740}
   - component: {fileID: 2469346449183817164}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Indexes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,8 +387,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.33
-  m_fontSizeBase: 25.33
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

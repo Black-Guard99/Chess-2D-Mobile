@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 public class Board : MonoBehaviour {
-    public const int BOARD_SIZE = 8;
+    private const int BOARD_SIZE = 8;
+    private const string findString = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
     [SerializeField] private Canvas canvas;
-    [SerializeField] private string findString;
     [SerializeField] private BoardPieceHolder boardPiceView;
     [SerializeField] private float squareSize = 3.5f;
     [SerializeField] private Color lightColor = Color.white,darkColor = Color.black;
@@ -14,11 +14,12 @@ public class Board : MonoBehaviour {
     [SerializeField] private Vector2[] knightCheckOffset;
     [SerializeField] private Vector2[] directionToCheckRook,directionToCheckBishop,directionToCheckKing,directionToCheckQueen;
     [SerializeField] private List<BoardPieceHolder> boardPieceHoldersList;
-    private void Start() {
-        board = new BoardPieceHolder[BOARD_SIZE,BOARD_SIZE];
+
+    /* private void Start() {
         SetUp();
-    }
-    private void SetUp(){
+    } */
+    public void SetUp(){
+        board = new BoardPieceHolder[BOARD_SIZE,BOARD_SIZE];
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (int j = 0; j < BOARD_SIZE; j++) {
                 BoardPieceHolder piece = Instantiate(boardPiceView,boardHolder);
@@ -114,7 +115,7 @@ public class Board : MonoBehaviour {
         boardPieceHoldersList = new List<BoardPieceHolder>();
         float range = 2;
         foreach(Vector2 direction in directionToCheckKing){
-            for (int i = 1; i < range; i++) {
+            for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
                 Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
@@ -197,7 +198,6 @@ public class Board : MonoBehaviour {
     }
 
 
-
     public BoardPieceHolder GetBoardCoordFromPos(Vector2 pos){
         int x = Mathf.FloorToInt(pos.x / squareSize);
         int y = Mathf.FloorToInt(pos.y / squareSize);
@@ -206,10 +206,24 @@ public class Board : MonoBehaviour {
     public bool CheckCoordsInsideBoard(Vector2 pos){
         int x = Mathf.FloorToInt(pos.x / squareSize);
         int y = Mathf.FloorToInt(pos.y / squareSize);
-        Debug.Log("x: " + x + "Y : " + y);
+        // Debug.Log("x: " + x + "Y : " + y);
         if(x < 0 || y < 0 || x >= BOARD_SIZE || y >= BOARD_SIZE || x <= -BOARD_SIZE || y <= -BOARD_SIZE){
             return false;
         }
         return true;
     }
+
+
+    public List<BoardPieceHolder> GetPiecesByColorType(ColorType colorType){
+        List<BoardPieceHolder> pieceHolders = new List<BoardPieceHolder>();
+        for (int i = 0; i < board.GetLength(0); i++) {
+            for (int j = 0; j < board.GetLength(1); j++) {
+                if(board[i,j].GetColorType() == colorType){
+                    pieceHolders.Add(board[i,j]);
+                }
+            }
+        }
+        return pieceHolders;
+    }
+
 }

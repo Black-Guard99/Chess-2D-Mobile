@@ -1,541 +1,2096 @@
-2024-08-24T14:04:03.679Z|0x77c0|Using pre-set license
-2024-08-24T14:04:03.680Z|0x77c0|Built from '2022.3/staging' branch; Version is '2022.3.42f1 (2dcb6a0abc42) revision 3001194'; Using compiler version '192829333'; Build Type 'Release'
-2024-08-24T14:04:03.680Z|0x77c0|OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16068 MB
-2024-08-24T14:04:03.680Z|0x77c0|BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-2024-08-24T14:04:03.683Z|0x77c0|
+2024-08-25T11:58:47.723Z|0x1138|Using pre-set license
+2024-08-25T11:58:47.723Z|0x1138|Built from '2022.3/staging' branch; Version is '2022.3.42f1 (2dcb6a0abc42) revision 3001194'; Using compiler version '192829333'; Build Type 'Release'
+2024-08-25T11:58:47.724Z|0x1138|OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16068 MB
+2024-08-25T11:58:47.724Z|0x1138|BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+2024-08-25T11:58:47.727Z|0x1138|
 COMMAND LINE ARGUMENTS:
-2024-08-24T14:04:03.683Z|0x77c0|C:\Program Files\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe
-2024-08-24T14:04:03.683Z|0x77c0|-adb2
-2024-08-24T14:04:03.683Z|0x77c0|-batchMode
-2024-08-24T14:04:03.683Z|0x77c0|-noUpm
-2024-08-24T14:04:03.683Z|0x77c0|-name
-2024-08-24T14:04:03.683Z|0x77c0|AssetImportWorker1
-2024-08-24T14:04:03.683Z|0x77c0|-projectPath
-2024-08-24T14:04:03.683Z|0x77c0|C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D
-2024-08-24T14:04:03.683Z|0x77c0|-logFile
-2024-08-24T14:04:03.683Z|0x77c0|Logs/AssetImportWorker1.log
-2024-08-24T14:04:03.683Z|0x77c0|-srvPort
-2024-08-24T14:04:03.683Z|0x77c0|57258
-2024-08-24T14:04:03.683Z|0x77c0|Successfully changed project path to: C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D
-2024-08-24T14:04:03.692Z|0x77c0|C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D
-2024-08-24T14:04:03.693Z|0x77c0|[UnityMemory] Configuration Parameters - Can be set up in boot.config
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-bucket-allocator-granularity=16"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-bucket-allocator-bucket-count=8"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-bucket-allocator-block-size=33554432"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-bucket-allocator-block-count=8"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-main-allocator-block-size=16777216"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-thread-allocator-block-size=16777216"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-gfx-main-allocator-block-size=16777216"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-gfx-thread-allocator-block-size=16777216"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-cache-allocator-block-size=4194304"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-typetree-allocator-block-size=2097152"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-profiler-bucket-allocator-granularity=16"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-profiler-bucket-allocator-bucket-count=8"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-profiler-bucket-allocator-block-size=33554432"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-profiler-bucket-allocator-block-count=8"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-profiler-allocator-block-size=16777216"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-profiler-editor-allocator-block-size=1048576"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-main=16777216"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-job-temp-allocator-block-size=2097152"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-job-temp-allocator-block-size-background=1048576"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-allocator-temp-initial-block-size-main=262144"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-allocator-temp-initial-block-size-worker=262144"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-background-worker=32768"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-job-worker=262144"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-preload-manager=33554432"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-audio-worker=65536"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-cloud-worker=32768"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
-2024-08-24T14:04:03.693Z|0x77c0|    "memorysetup-temp-allocator-size-gfx=262144"
-2024-08-24T14:04:03.698Z|0x77c0|Player connection [30656]  Target information:
+2024-08-25T11:58:47.727Z|0x1138|C:\Program Files\Unity\Hub\Editor\2022.3.42f1\Editor\Unity.exe
+2024-08-25T11:58:47.727Z|0x1138|-adb2
+2024-08-25T11:58:47.727Z|0x1138|-batchMode
+2024-08-25T11:58:47.727Z|0x1138|-noUpm
+2024-08-25T11:58:47.727Z|0x1138|-name
+2024-08-25T11:58:47.727Z|0x1138|AssetImportWorker1
+2024-08-25T11:58:47.727Z|0x1138|-projectPath
+2024-08-25T11:58:47.727Z|0x1138|C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D
+2024-08-25T11:58:47.727Z|0x1138|-logFile
+2024-08-25T11:58:47.727Z|0x1138|Logs/AssetImportWorker1.log
+2024-08-25T11:58:47.727Z|0x1138|-srvPort
+2024-08-25T11:58:47.727Z|0x1138|64075
+2024-08-25T11:58:47.727Z|0x1138|Successfully changed project path to: C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D
+2024-08-25T11:58:47.737Z|0x1138|C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D
+2024-08-25T11:58:47.737Z|0x1138|[UnityMemory] Configuration Parameters - Can be set up in boot.config
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-bucket-allocator-granularity=16"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-bucket-allocator-bucket-count=8"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-bucket-allocator-block-size=33554432"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-bucket-allocator-block-count=8"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-main-allocator-block-size=16777216"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-thread-allocator-block-size=16777216"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-gfx-main-allocator-block-size=16777216"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-gfx-thread-allocator-block-size=16777216"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-cache-allocator-block-size=4194304"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-typetree-allocator-block-size=2097152"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-profiler-bucket-allocator-granularity=16"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-profiler-bucket-allocator-block-count=8"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-profiler-allocator-block-size=16777216"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-profiler-editor-allocator-block-size=1048576"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-temp-allocator-size-main=16777216"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-job-temp-allocator-block-size=2097152"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-job-temp-allocator-block-size-background=1048576"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+2024-08-25T11:58:47.737Z|0x1138|    "memorysetup-allocator-temp-initial-block-size-main=262144"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-background-worker=32768"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-job-worker=262144"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-preload-manager=33554432"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-audio-worker=65536"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-cloud-worker=32768"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+2024-08-25T11:58:47.738Z|0x1138|    "memorysetup-temp-allocator-size-gfx=262144"
+2024-08-25T11:58:47.744Z|0x1138|Player connection [4408]  Target information:
 
-2024-08-24T14:04:03.698Z|0x77c0|Player connection [30656]  * "[IP] 192.168.246.80 [Port] 0 [Flags] 2 [Guid] 3944609295 [EditorId] 3944609295 [Version] 1048832 [Id] WindowsEditor(7,Abhi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+2024-08-25T11:58:47.744Z|0x1138|Player connection [4408]  * "[IP] 192.168.246.80 [Port] 0 [Flags] 2 [Guid] 3432667112 [EditorId] 3432667112 [Version] 1048832 [Id] WindowsEditor(7,Abhi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-2024-08-24T14:04:03.699Z|0x77c0|Player connection [30656] Host joined multi-casting on [225.0.0.222:54997]...
-2024-08-24T14:04:03.700Z|0x77c0|Player connection [30656] Host joined alternative multi-casting on [225.0.0.222:34997]...
-2024-08-24T14:04:03.704Z|0x77c0|[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-2024-08-24T14:04:03.777Z|0x77c0|Refreshing native plugins compatible for Editor in 12.37 ms, found 4 plugins.
-2024-08-24T14:04:03.777Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:04:03.777Z|0x77c0|Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
-2024-08-24T14:04:03.777Z|0x77c0|[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Resources/UnitySubsystems
-2024-08-24T14:04:03.777Z|0x77c0|[Subsystems] Discovering subsystems at path C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D/Assets
-2024-08-24T14:04:03.777Z|0x77c0|GfxDevice: creating device client; threaded=0; jobified=0
-2024-08-24T14:04:03.909Z|0x77c0|Direct3D:
-2024-08-24T14:04:03.909Z|0x77c0|    Version:  Direct3D 11.0 [level 11.1]
-2024-08-24T14:04:03.909Z|0x77c0|    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
-2024-08-24T14:04:03.909Z|0x77c0|    Vendor:   NVIDIA
-2024-08-24T14:04:03.909Z|0x77c0|    VRAM:     5996 MB
-2024-08-24T14:04:03.909Z|0x77c0|    Driver:   32.0.15.6094
-2024-08-24T14:04:03.993Z|0x77c0|Initialize mono
-2024-08-24T14:04:03.993Z|0x77c0|Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Managed'
-2024-08-24T14:04:03.993Z|0x77c0|Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-2024-08-24T14:04:03.993Z|0x77c0|Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
-2024-08-24T14:04:03.993Z|0x77c0|Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
-2024-08-24T14:04:04.037Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:04:04.187Z|0x77c0|Registering precompiled unity dll's ...
-2024-08-24T14:04:04.189Z|0x77c0|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-2024-08-24T14:04:04.191Z|0x77c0|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-2024-08-24T14:04:04.193Z|0x77c0|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-2024-08-24T14:04:04.195Z|0x77c0|Registered in 0.008573 seconds.
-2024-08-24T14:04:04.350Z|0x77c0|- Loaded All Assemblies, in  0.312 seconds
-2024-08-24T14:04:04.389Z|0x77c0|Native extension for WindowsStandalone target not found
+2024-08-25T11:58:47.746Z|0x1138|Player connection [4408] Host joined multi-casting on [225.0.0.222:54997]...
+2024-08-25T11:58:47.746Z|0x1138|Player connection [4408] Host joined alternative multi-casting on [225.0.0.222:34997]...
+2024-08-25T11:58:47.753Z|0x1138|[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+2024-08-25T11:58:47.836Z|0x1138|Refreshing native plugins compatible for Editor in 13.57 ms, found 4 plugins.
+2024-08-25T11:58:47.836Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T11:58:47.836Z|0x1138|Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
+2024-08-25T11:58:47.836Z|0x1138|[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Resources/UnitySubsystems
+2024-08-25T11:58:47.836Z|0x1138|[Subsystems] Discovering subsystems at path C:/Users/abc4d/Documents/MyDreamgame/Unity Projets/Chess-2D-Mobile/Chess2D/Assets
+2024-08-25T11:58:47.837Z|0x1138|GfxDevice: creating device client; threaded=0; jobified=0
+2024-08-25T11:58:47.994Z|0x1138|Direct3D:
+2024-08-25T11:58:47.994Z|0x1138|    Version:  Direct3D 11.0 [level 11.1]
+2024-08-25T11:58:47.994Z|0x1138|    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+2024-08-25T11:58:47.994Z|0x1138|    Vendor:   NVIDIA
+2024-08-25T11:58:47.994Z|0x1138|    VRAM:     5996 MB
+2024-08-25T11:58:47.994Z|0x1138|    Driver:   32.0.15.6094
+2024-08-25T11:58:48.093Z|0x1138|Initialize mono
+2024-08-25T11:58:48.093Z|0x1138|Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/Managed'
+2024-08-25T11:58:48.093Z|0x1138|Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+2024-08-25T11:58:48.093Z|0x1138|Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
+2024-08-25T11:58:48.093Z|0x1138|Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+2024-08-25T11:58:48.139Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T11:58:48.330Z|0x1138|Registering precompiled unity dll's ...
+2024-08-25T11:58:48.333Z|0x1138|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+2024-08-25T11:58:48.335Z|0x1138|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+2024-08-25T11:58:48.337Z|0x1138|Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+2024-08-25T11:58:48.340Z|0x1138|Registered in 0.010626 seconds.
+2024-08-25T11:58:48.512Z|0x1138|- Loaded All Assemblies, in  0.373 seconds
+2024-08-25T11:58:48.558Z|0x1138|Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
-2024-08-24T14:04:04.392Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:04:04.401Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:04:04.691Z|0x77c0|Android Extension - Scanning For ADB Devices 246 ms2024-08-24T14:04:04.691Z|0x77c0|
-2024-08-24T14:04:04.873Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:04:04.887Z|0x77c0|- Finished resetting the current domain, in  0.537 seconds
-2024-08-24T14:04:04.887Z|0x77c0|Domain Reload Profiling: 847ms
-	BeginReloadAssembly (100ms)
+2024-08-25T11:58:48.562Z|0x1138|Native extension for iOS target not found
+2024-08-25T11:58:48.573Z|0x1138|Native extension for Android target not found
+2024-08-25T11:58:49.049Z|0x1138|Android Extension - Scanning For ADB Devices 421 ms2024-08-25T11:58:49.049Z|0x1138|
+2024-08-25T11:58:49.246Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T11:58:49.259Z|0x1138|- Finished resetting the current domain, in  0.747 seconds
+2024-08-25T11:58:49.260Z|0x1138|Domain Reload Profiling: 1118ms
+	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (125ms)
-		LoadAssemblies (98ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (121ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (123ms)
-			TypeCache.Refresh (121ms)
-				TypeCache.ScanAssembly (111ms)
+		AnalyzeDomain (136ms)
+			TypeCache.Refresh (135ms)
+				TypeCache.ScanAssembly (123ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (537ms)
+	FinalizeReload (748ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (499ms)
+		SetupLoadedEditorAssemblies (704ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (348ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (540ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (99ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			ProcessInitializeOnLoadAttributes (114ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
-2024-08-24T14:04:05.058Z|0x77c0|========================================================================
-2024-08-24T14:04:05.058Z|0x77c0|Worker process is ready to serve import requests
-2024-08-24T14:04:06.446Z|0x77c0|Caller must complete domain reload
-2024-08-24T14:04:06.522Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:04:07.310Z|0x77c0|- Loaded All Assemblies, in  0.788 seconds
-2024-08-24T14:04:07.434Z|0x77c0|Native extension for WindowsStandalone target not found
-2024-08-24T14:04:07.437Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:04:07.444Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:04:07.774Z|0x77c0|Package Manager log level set to [2]
-2024-08-24T14:04:07.774Z|0x77c0|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-2024-08-24T14:04:07.774Z|0x77c0|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-2024-08-24T14:04:07.774Z|0x77c0|[Package Manager] Cannot connect to Unity Package Manager local server
-2024-08-24T14:04:07.877Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:04:07.897Z|0x77c0|- Finished resetting the current domain, in  0.586 seconds
-2024-08-24T14:04:07.897Z|0x77c0|Domain Reload Profiling: 1369ms
-	BeginReloadAssembly (186ms)
+2024-08-25T11:58:49.445Z|0x1138|========================================================================
+2024-08-25T11:58:49.445Z|0x1138|Worker process is ready to serve import requests
+2024-08-25T11:58:50.408Z|0x1138|Caller must complete domain reload
+2024-08-25T11:58:50.460Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T11:58:51.116Z|0x1138|- Loaded All Assemblies, in  0.655 seconds
+2024-08-25T11:58:51.239Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T11:58:51.242Z|0x1138|Native extension for iOS target not found
+2024-08-25T11:58:51.251Z|0x1138|Native extension for Android target not found
+2024-08-25T11:58:51.602Z|0x1138|Package Manager log level set to [2]
+2024-08-25T11:58:51.602Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T11:58:51.602Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T11:58:51.602Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T11:58:51.699Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T11:58:51.717Z|0x1138|- Finished resetting the current domain, in  0.601 seconds
+2024-08-25T11:58:51.717Z|0x1138|Domain Reload Profiling: 1252ms
+	BeginReloadAssembly (141ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (501ms)
-		LoadAssemblies (427ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (184ms)
-			TypeCache.Refresh (153ms)
-				TypeCache.ScanAssembly (137ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (586ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (449ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (259ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-2024-08-24T14:04:08.202Z|0x77c0|Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-2024-08-24T14:04:08.293Z|0x77c0|Refreshing native plugins compatible for Editor in 4.62 ms, found 4 plugins.
-2024-08-24T14:04:08.293Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:04:08.315Z|0x7818|Unloading 5693 Unused Serialized files (Serialized files now loaded: 0)
-2024-08-24T14:04:08.320Z|0x77c0|Unloading 48 unused Assets / (0.9 MB). Loaded Objects now: 6150.
-Memory consumption went from 225.9 MB to 225.0 MB.
-2024-08-24T14:04:08.320Z|0x77c0|Total: 4.300900 ms (FindLiveObjects: 0.324700 ms CreateObjectMapping: 0.210300 ms MarkObjects: 3.305300 ms  DeleteObjects: 0.458700 ms)
-
-2024-08-24T14:04:08.322Z|0x77c0|AssetImportParameters requested are different than current active one (requested -> active):
-2024-08-24T14:04:08.322Z|0x77c0|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:04:08.322Z|0x77c0|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:04:08.322Z|0x77c0|========================================================================
-Received Import Request.
-  Time since last request: 17293.389652 seconds.
-  path: Assets/_Assets/_Prefabs/Board Piece View.prefab
-  artifactKey: Guid(042caf5efa6fdb14baa8ceb3131832cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-2024-08-24T14:04:08.330Z|0x77c0|Start importing Assets/_Assets/_Prefabs/Board Piece View.prefab using Guid(042caf5efa6fdb14baa8ceb3131832cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) 2024-08-24T14:04:08.330Z|0x77c0|[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-2024-08-24T14:04:08.394Z|0x77c0| -> (artifact id: '8f16f103dadb2ef1e04edacc31730303') in 0.065381 seconds
-2024-08-24T14:04:08.395Z|0x77c0|Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-2024-08-24T14:08:13.332Z|0x77c0|========================================================================
-2024-08-24T14:08:13.332Z|0x77c0|Received Prepare
-2024-08-24T14:08:13.530Z|0x77c0|Caller must complete domain reload
-2024-08-24T14:08:13.582Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:08:14.518Z|0x77c0|- Loaded All Assemblies, in  0.938 seconds
-2024-08-24T14:08:14.656Z|0x77c0|Native extension for WindowsStandalone target not found
-2024-08-24T14:08:14.660Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:08:14.669Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:08:14.961Z|0x77c0|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-2024-08-24T14:08:14.961Z|0x77c0|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-2024-08-24T14:08:14.961Z|0x77c0|[Package Manager] Cannot connect to Unity Package Manager local server
-2024-08-24T14:08:15.052Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:08:15.071Z|0x77c0|- Finished resetting the current domain, in  0.550 seconds
-2024-08-24T14:08:15.072Z|0x77c0|Domain Reload Profiling: 1485ms
-	BeginReloadAssembly (624ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (480ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (249ms)
-		LoadAssemblies (288ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (35ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (551ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (395ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (220ms)
-			ProcessInitializeOnLoadMethodAttributes (58ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-2024-08-24T14:08:15.638Z|0x77c0|Refreshing native plugins compatible for Editor in 5.78 ms, found 4 plugins.
-2024-08-24T14:08:15.638Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:08:15.665Z|0x5dcc|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
-2024-08-24T14:08:15.670Z|0x77c0|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6157.
-Memory consumption went from 200.1 MB to 199.2 MB.
-2024-08-24T14:08:15.670Z|0x77c0|Total: 4.506300 ms (FindLiveObjects: 0.343100 ms CreateObjectMapping: 0.285900 ms MarkObjects: 3.411100 ms  DeleteObjects: 0.464800 ms)
-
-2024-08-24T14:08:15.670Z|0x77c0|Prepare: number of updated asset objects reloaded= 0
-2024-08-24T14:08:15.672Z|0x77c0|AssetImportParameters requested are different than current active one (requested -> active):
-2024-08-24T14:08:15.672Z|0x77c0|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:15.672Z|0x77c0|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:18.072Z|0x77c0|========================================================================
-2024-08-24T14:08:18.072Z|0x77c0|Received Prepare
-2024-08-24T14:08:18.283Z|0x77c0|Caller must complete domain reload
-2024-08-24T14:08:18.333Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:08:18.740Z|0x77c0|- Loaded All Assemblies, in  0.408 seconds
-2024-08-24T14:08:19.372Z|0x77c0|Native extension for WindowsStandalone target not found
-2024-08-24T14:08:19.375Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:08:19.384Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:08:19.702Z|0x77c0|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-2024-08-24T14:08:19.702Z|0x77c0|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-2024-08-24T14:08:19.702Z|0x77c0|[Package Manager] Cannot connect to Unity Package Manager local server
-2024-08-24T14:08:19.797Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:08:19.816Z|0x77c0|- Finished resetting the current domain, in  1.075 seconds
-2024-08-24T14:08:19.817Z|0x77c0|Domain Reload Profiling: 1478ms
-	BeginReloadAssembly (132ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (23ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (267ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (439ms)
+		LoadAssemblies (333ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (16ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1075ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (141ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (601ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (424ms)
+		SetupLoadedEditorAssemblies (467ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (33ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (236ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (275ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-2024-08-24T14:08:20.447Z|0x77c0|Refreshing native plugins compatible for Editor in 4.47 ms, found 4 plugins.
-2024-08-24T14:08:20.447Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:08:20.473Z|0x651c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
-2024-08-24T14:08:20.476Z|0x77c0|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6162.
-Memory consumption went from 200.1 MB to 199.2 MB.
-2024-08-24T14:08:20.476Z|0x77c0|Total: 3.760000 ms (FindLiveObjects: 0.382200 ms CreateObjectMapping: 0.315900 ms MarkObjects: 2.758300 ms  DeleteObjects: 0.302800 ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+2024-08-25T11:58:52.113Z|0x1138|Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+2024-08-25T11:58:52.207Z|0x1138|Refreshing native plugins compatible for Editor in 4.19 ms, found 4 plugins.
+2024-08-25T11:58:52.207Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T11:58:52.228Z|0x58b4|Unloading 5693 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T11:58:52.232Z|0x1138|Unloading 48 unused Assets / (0.9 MB). Loaded Objects now: 6150.
+Memory consumption went from 225.7 MB to 224.8 MB.
+2024-08-25T11:58:52.232Z|0x1138|Total: 3.283600 ms (FindLiveObjects: 0.281800 ms CreateObjectMapping: 0.160400 ms MarkObjects: 2.454300 ms  DeleteObjects: 0.386100 ms)
 
-2024-08-24T14:08:20.476Z|0x77c0|Prepare: number of updated asset objects reloaded= 0
-2024-08-24T14:08:20.479Z|0x77c0|AssetImportParameters requested are different than current active one (requested -> active):
-2024-08-24T14:08:20.479Z|0x77c0|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:20.479Z|0x77c0|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:46.596Z|0x77c0|========================================================================
-2024-08-24T14:08:46.596Z|0x77c0|Received Prepare
-2024-08-24T14:08:47.229Z|0x77c0|Caller must complete domain reload
-2024-08-24T14:08:47.376Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:08:48.051Z|0x77c0|- Loaded All Assemblies, in  0.675 seconds
-2024-08-24T14:08:48.631Z|0x77c0|Native extension for WindowsStandalone target not found
-2024-08-24T14:08:48.636Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:08:48.644Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:08:48.939Z|0x77c0|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-2024-08-24T14:08:48.939Z|0x77c0|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-2024-08-24T14:08:48.939Z|0x77c0|[Package Manager] Cannot connect to Unity Package Manager local server
-2024-08-24T14:08:49.026Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:08:49.046Z|0x77c0|- Finished resetting the current domain, in  0.994 seconds
-2024-08-24T14:08:49.046Z|0x77c0|Domain Reload Profiling: 1663ms
-	BeginReloadAssembly (354ms)
+2024-08-25T11:58:52.234Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T11:58:52.234Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T11:58:52.234Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T11:59:04.209Z|0x1138|========================================================================
+2024-08-25T11:59:04.209Z|0x1138|Received Prepare
+2024-08-25T11:59:04.443Z|0x1138|Caller must complete domain reload
+2024-08-25T11:59:04.501Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T11:59:05.509Z|0x1138|- Loaded All Assemblies, in  1.009 seconds
+2024-08-25T11:59:05.690Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T11:59:05.693Z|0x1138|Native extension for iOS target not found
+2024-08-25T11:59:05.706Z|0x1138|Native extension for Android target not found
+2024-08-25T11:59:06.126Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T11:59:06.126Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T11:59:06.126Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T11:59:06.276Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T11:59:06.308Z|0x1138|- Finished resetting the current domain, in  0.796 seconds
+2024-08-25T11:59:06.309Z|0x1138|Domain Reload Profiling: 1802ms
+	BeginReloadAssembly (678ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (28ms)
+		DisableScriptedObjects (527ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (66ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (237ms)
-		LoadAssemblies (400ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (254ms)
+		LoadAssemblies (314ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (35ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (995ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (797ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (395ms)
+		SetupLoadedEditorAssemblies (582ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (220ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (322ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-2024-08-24T14:08:49.597Z|0x77c0|Refreshing native plugins compatible for Editor in 4.41 ms, found 4 plugins.
-2024-08-24T14:08:49.597Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:08:49.623Z|0x42f8|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
-2024-08-24T14:08:49.627Z|0x77c0|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6167.
-Memory consumption went from 200.1 MB to 199.2 MB.
-2024-08-24T14:08:49.627Z|0x77c0|Total: 4.127500 ms (FindLiveObjects: 0.324600 ms CreateObjectMapping: 0.199600 ms MarkObjects: 3.256100 ms  DeleteObjects: 0.346100 ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+2024-08-25T11:59:07.549Z|0x1138|Refreshing native plugins compatible for Editor in 12.82 ms, found 4 plugins.
+2024-08-25T11:59:07.550Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T11:59:07.597Z|0x594c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T11:59:07.604Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6156.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T11:59:07.604Z|0x1138|Total: 6.460100 ms (FindLiveObjects: 0.545500 ms CreateObjectMapping: 0.309500 ms MarkObjects: 5.058000 ms  DeleteObjects: 0.545100 ms)
 
-2024-08-24T14:08:49.627Z|0x77c0|Prepare: number of updated asset objects reloaded= 0
-2024-08-24T14:08:49.629Z|0x77c0|AssetImportParameters requested are different than current active one (requested -> active):
-2024-08-24T14:08:49.629Z|0x77c0|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:49.629Z|0x77c0|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:52.251Z|0x77c0|========================================================================
-2024-08-24T14:08:52.251Z|0x77c0|Received Prepare
-2024-08-24T14:08:52.454Z|0x77c0|Caller must complete domain reload
-2024-08-24T14:08:52.503Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:08:52.917Z|0x77c0|- Loaded All Assemblies, in  0.413 seconds
-2024-08-24T14:08:53.555Z|0x77c0|Native extension for WindowsStandalone target not found
-2024-08-24T14:08:53.558Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:08:53.568Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:08:53.914Z|0x77c0|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-2024-08-24T14:08:53.914Z|0x77c0|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-2024-08-24T14:08:53.914Z|0x77c0|[Package Manager] Cannot connect to Unity Package Manager local server
-2024-08-24T14:08:54.023Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:08:54.042Z|0x77c0|- Finished resetting the current domain, in  1.126 seconds
-2024-08-24T14:08:54.043Z|0x77c0|Domain Reload Profiling: 1534ms
+2024-08-25T11:59:07.604Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T11:59:07.608Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T11:59:07.608Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T11:59:07.608Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:01:44.533Z|0x1138|========================================================================
+2024-08-25T12:01:44.533Z|0x1138|Received Prepare
+2024-08-25T12:01:45.259Z|0x1138|Caller must complete domain reload
+2024-08-25T12:01:45.316Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:01:45.854Z|0x1138|- Loaded All Assemblies, in  0.538 seconds
+2024-08-25T12:01:46.581Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:01:46.584Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:01:46.595Z|0x1138|Native extension for Android target not found
+2024-08-25T12:01:46.961Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:01:46.961Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:01:46.961Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:01:47.069Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:01:47.094Z|0x1138|- Finished resetting the current domain, in  1.239 seconds
+2024-08-25T12:01:47.094Z|0x1138|Domain Reload Profiling: 1771ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (290ms)
+		LoadAssemblies (343ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (45ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1239ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (487ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (276ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+2024-08-25T12:01:47.762Z|0x1138|Refreshing native plugins compatible for Editor in 5.99 ms, found 4 plugins.
+2024-08-25T12:01:47.762Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:01:47.787Z|0x262c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:01:47.791Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6161.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:01:47.791Z|0x1138|Total: 3.921500 ms (FindLiveObjects: 0.335500 ms CreateObjectMapping: 0.193100 ms MarkObjects: 3.064300 ms  DeleteObjects: 0.327700 ms)
+
+2024-08-25T12:01:47.791Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:01:47.793Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:01:47.793Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:01:47.793Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:01:47.794Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:01:47.794Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:01:47.794Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:01:47.794Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:01:55.829Z|0x1138|========================================================================
+2024-08-25T12:01:55.829Z|0x1138|Received Prepare
+2024-08-25T12:01:56.068Z|0x1138|Caller must complete domain reload
+2024-08-25T12:01:56.126Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:01:56.612Z|0x1138|- Loaded All Assemblies, in  0.486 seconds
+2024-08-25T12:01:57.471Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:01:57.473Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:01:57.483Z|0x1138|Native extension for Android target not found
+2024-08-25T12:01:57.870Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:01:57.871Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:01:57.871Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:01:57.983Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:01:58.005Z|0x1138|- Finished resetting the current domain, in  1.393 seconds
+2024-08-25T12:01:58.006Z|0x1138|Domain Reload Profiling: 1874ms
+	BeginReloadAssembly (154ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (311ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1394ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (511ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (296ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+2024-08-25T12:01:58.665Z|0x1138|Refreshing native plugins compatible for Editor in 5.24 ms, found 4 plugins.
+2024-08-25T12:01:58.665Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:01:58.692Z|0x5638|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:01:58.696Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6166.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:01:58.696Z|0x1138|Total: 4.109700 ms (FindLiveObjects: 0.360300 ms CreateObjectMapping: 0.236000 ms MarkObjects: 2.980100 ms  DeleteObjects: 0.531800 ms)
+
+2024-08-25T12:01:58.696Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:01:58.699Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:01:58.699Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:01:58.699Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:07:28.804Z|0x1138|========================================================================
+2024-08-25T12:07:28.804Z|0x1138|Received Prepare
+2024-08-25T12:07:29.268Z|0x1138|Caller must complete domain reload
+2024-08-25T12:07:29.333Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:07:29.868Z|0x1138|- Loaded All Assemblies, in  0.535 seconds
+2024-08-25T12:07:30.574Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:07:30.577Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:07:30.586Z|0x1138|Native extension for Android target not found
+2024-08-25T12:07:30.940Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:07:30.940Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:07:30.940Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:07:31.051Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:07:31.079Z|0x1138|- Finished resetting the current domain, in  1.210 seconds
+2024-08-25T12:07:31.079Z|0x1138|Domain Reload Profiling: 1739ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (296ms)
+		LoadAssemblies (333ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (44ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1211ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (474ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (266ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+2024-08-25T12:07:31.726Z|0x1138|Refreshing native plugins compatible for Editor in 5.16 ms, found 4 plugins.
+2024-08-25T12:07:31.726Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:07:31.754Z|0x5df4|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:07:31.758Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6171.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:07:31.758Z|0x1138|Total: 3.754500 ms (FindLiveObjects: 0.330200 ms CreateObjectMapping: 0.196500 ms MarkObjects: 2.910500 ms  DeleteObjects: 0.316400 ms)
+
+2024-08-25T12:07:31.758Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:07:31.762Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:07:31.762Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:07:31.762Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:07:36.683Z|0x1138|========================================================================
+2024-08-25T12:07:36.683Z|0x1138|Received Prepare
+2024-08-25T12:07:36.961Z|0x1138|Caller must complete domain reload
+2024-08-25T12:07:37.010Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:07:37.424Z|0x1138|- Loaded All Assemblies, in  0.414 seconds
+2024-08-25T12:07:38.033Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:07:38.036Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:07:38.045Z|0x1138|Native extension for Android target not found
+2024-08-25T12:07:38.348Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:07:38.348Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:07:38.348Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:07:38.440Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:07:38.459Z|0x1138|- Finished resetting the current domain, in  1.034 seconds
+2024-08-25T12:07:38.459Z|0x1138|Domain Reload Profiling: 1443ms
 	BeginReloadAssembly (133ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (216ms)
+		LoadAssemblies (266ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1034ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (406ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (226ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+2024-08-25T12:07:39.035Z|0x1138|Refreshing native plugins compatible for Editor in 4.38 ms, found 4 plugins.
+2024-08-25T12:07:39.035Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:07:39.061Z|0x5b28|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:07:39.065Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6176.
+Memory consumption went from 199.6 MB to 198.7 MB.
+2024-08-25T12:07:39.065Z|0x1138|Total: 3.713800 ms (FindLiveObjects: 0.305500 ms CreateObjectMapping: 0.182600 ms MarkObjects: 2.853500 ms  DeleteObjects: 0.371400 ms)
+
+2024-08-25T12:07:39.065Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:07:39.067Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:07:39.067Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:07:39.067Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:08:05.205Z|0x1138|========================================================================
+2024-08-25T12:08:05.205Z|0x1138|Received Prepare
+2024-08-25T12:08:06.086Z|0x1138|Caller must complete domain reload
+2024-08-25T12:08:06.246Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:08:07.538Z|0x1138|- Loaded All Assemblies, in  1.291 seconds
+2024-08-25T12:08:09.357Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:08:09.365Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:08:09.393Z|0x1138|Native extension for Android target not found
+2024-08-25T12:08:10.145Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:08:10.145Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:08:10.146Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:08:10.368Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:08:10.411Z|0x1138|- Finished resetting the current domain, in  2.874 seconds
+2024-08-25T12:08:10.413Z|0x1138|Domain Reload Profiling: 4148ms
+	BeginReloadAssembly (501ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (80ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (570ms)
+		LoadAssemblies (852ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (33ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (2875ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1011ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (91ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (553ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+2024-08-25T12:08:12.030Z|0x1138|Refreshing native plugins compatible for Editor in 15.23 ms, found 4 plugins.
+2024-08-25T12:08:12.030Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:08:12.083Z|0x2dd8|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:08:12.089Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6181.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:08:12.089Z|0x1138|Total: 5.552500 ms (FindLiveObjects: 0.616000 ms CreateObjectMapping: 0.316800 ms MarkObjects: 4.102500 ms  DeleteObjects: 0.516000 ms)
+
+2024-08-25T12:08:12.089Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:08:12.091Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:08:12.091Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:08:12.091Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:08:12.091Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:08:12.093Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:08:31.576Z|0x1138|========================================================================
+2024-08-25T12:08:31.576Z|0x1138|Received Prepare
+2024-08-25T12:08:31.832Z|0x1138|Caller must complete domain reload
+2024-08-25T12:08:31.893Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:08:32.414Z|0x1138|- Loaded All Assemblies, in  0.521 seconds
+2024-08-25T12:08:33.148Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:08:33.152Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:08:33.164Z|0x1138|Native extension for Android target not found
+2024-08-25T12:08:33.536Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:08:33.536Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:08:33.536Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:08:33.646Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:08:33.669Z|0x1138|- Finished resetting the current domain, in  1.255 seconds
+2024-08-25T12:08:33.670Z|0x1138|Domain Reload Profiling: 1771ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (308ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (46ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1256ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (498ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (282ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+2024-08-25T12:08:34.253Z|0x1138|Refreshing native plugins compatible for Editor in 4.55 ms, found 4 plugins.
+2024-08-25T12:08:34.253Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:08:34.278Z|0x5768|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:08:34.282Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6186.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:08:34.282Z|0x1138|Total: 3.559500 ms (FindLiveObjects: 0.301100 ms CreateObjectMapping: 0.178000 ms MarkObjects: 2.758500 ms  DeleteObjects: 0.320800 ms)
+
+2024-08-25T12:08:34.282Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:08:34.284Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:08:34.284Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:08:34.284Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:08:35.688Z|0x1138|========================================================================
+2024-08-25T12:08:35.688Z|0x1138|Received Prepare
+2024-08-25T12:08:35.900Z|0x1138|Caller must complete domain reload
+2024-08-25T12:08:35.950Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:08:36.353Z|0x1138|- Loaded All Assemblies, in  0.403 seconds
+2024-08-25T12:08:36.971Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:08:36.973Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:08:36.983Z|0x1138|Native extension for Android target not found
+2024-08-25T12:08:37.340Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:08:37.340Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:08:37.341Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:08:37.455Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:08:37.477Z|0x1138|- Finished resetting the current domain, in  1.124 seconds
+2024-08-25T12:08:37.478Z|0x1138|Domain Reload Profiling: 1523ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
 	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (216ms)
-		LoadAssemblies (268ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (206ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1125ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (482ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (274ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+2024-08-25T12:08:38.295Z|0x1138|Refreshing native plugins compatible for Editor in 8.71 ms, found 4 plugins.
+2024-08-25T12:08:38.295Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:08:38.332Z|0x4748|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:08:38.338Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6191.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:08:38.338Z|0x1138|Total: 4.834900 ms (FindLiveObjects: 0.504900 ms CreateObjectMapping: 0.315400 ms MarkObjects: 3.592500 ms  DeleteObjects: 0.420900 ms)
+
+2024-08-25T12:08:38.338Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:08:38.341Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:08:38.341Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:08:38.341Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:08:38.341Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:08:38.342Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:09:10.376Z|0x1138|========================================================================
+2024-08-25T12:09:10.376Z|0x1138|Received Prepare
+2024-08-25T12:09:10.674Z|0x1138|Caller must complete domain reload
+2024-08-25T12:09:10.731Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:09:11.243Z|0x1138|- Loaded All Assemblies, in  0.512 seconds
+2024-08-25T12:09:11.994Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:09:11.998Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:09:12.006Z|0x1138|Native extension for Android target not found
+2024-08-25T12:09:12.388Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:09:12.389Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:09:12.389Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:09:12.498Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:09:12.523Z|0x1138|- Finished resetting the current domain, in  1.280 seconds
+2024-08-25T12:09:12.524Z|0x1138|Domain Reload Profiling: 1786ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (277ms)
+		LoadAssemblies (313ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1280ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (503ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:09:13.158Z|0x1138|Refreshing native plugins compatible for Editor in 5.92 ms, found 4 plugins.
+2024-08-25T12:09:13.158Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:09:13.186Z|0x5c4c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:09:13.191Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6196.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:09:13.191Z|0x1138|Total: 3.611000 ms (FindLiveObjects: 0.338600 ms CreateObjectMapping: 0.171100 ms MarkObjects: 2.770800 ms  DeleteObjects: 0.329200 ms)
+
+2024-08-25T12:09:13.191Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:09:13.193Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:09:13.193Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:09:13.193Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:09:35.724Z|0x1138|========================================================================
+2024-08-25T12:09:35.724Z|0x1138|Received Prepare
+2024-08-25T12:09:35.969Z|0x1138|Caller must complete domain reload
+2024-08-25T12:09:36.014Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:09:36.419Z|0x1138|- Loaded All Assemblies, in  0.405 seconds
+2024-08-25T12:09:37.041Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:09:37.044Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:09:37.054Z|0x1138|Native extension for Android target not found
+2024-08-25T12:09:37.410Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:09:37.410Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:09:37.410Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:09:37.533Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:09:37.555Z|0x1138|- Finished resetting the current domain, in  1.136 seconds
+2024-08-25T12:09:37.556Z|0x1138|Domain Reload Profiling: 1537ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (214ms)
+		LoadAssemblies (262ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (16ms)
 			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (1126ms)
+	FinalizeReload (1136ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (465ms)
+		SetupLoadedEditorAssemblies (490ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (34ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (265ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (285ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-2024-08-24T14:08:54.851Z|0x77c0|Refreshing native plugins compatible for Editor in 7.47 ms, found 4 plugins.
-2024-08-24T14:08:54.851Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:08:54.887Z|0x1b0c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
-2024-08-24T14:08:54.892Z|0x77c0|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6172.
-Memory consumption went from 200.1 MB to 199.2 MB.
-2024-08-24T14:08:54.892Z|0x77c0|Total: 5.071900 ms (FindLiveObjects: 0.423800 ms CreateObjectMapping: 0.251000 ms MarkObjects: 3.956800 ms  DeleteObjects: 0.438600 ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:09:38.388Z|0x1138|Refreshing native plugins compatible for Editor in 8.32 ms, found 4 plugins.
+2024-08-25T12:09:38.388Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:09:38.427Z|0x0f68|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:09:38.432Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6201.
+Memory consumption went from 199.6 MB to 198.8 MB.
+2024-08-25T12:09:38.432Z|0x1138|Total: 4.889800 ms (FindLiveObjects: 0.393400 ms CreateObjectMapping: 0.240800 ms MarkObjects: 3.823300 ms  DeleteObjects: 0.430600 ms)
 
-2024-08-24T14:08:54.892Z|0x77c0|Prepare: number of updated asset objects reloaded= 0
-2024-08-24T14:08:54.896Z|0x77c0|AssetImportParameters requested are different than current active one (requested -> active):
-2024-08-24T14:08:54.896Z|0x77c0|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:08:54.896Z|0x77c0|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:10:17.842Z|0x77c0|========================================================================
-2024-08-24T14:10:17.842Z|0x77c0|Received Prepare
-2024-08-24T14:10:18.053Z|0x77c0|Caller must complete domain reload
-2024-08-24T14:10:18.103Z|0x77c0|Begin MonoManager ReloadAssembly
-2024-08-24T14:10:18.566Z|0x77c0|- Loaded All Assemblies, in  0.463 seconds
-2024-08-24T14:10:19.155Z|0x77c0|Native extension for WindowsStandalone target not found
-2024-08-24T14:10:19.158Z|0x77c0|Native extension for iOS target not found
-2024-08-24T14:10:19.166Z|0x77c0|Native extension for Android target not found
-2024-08-24T14:10:19.456Z|0x77c0|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-2024-08-24T14:10:19.456Z|0x77c0|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-2024-08-24T14:10:19.456Z|0x77c0|[Package Manager] Cannot connect to Unity Package Manager local server
-2024-08-24T14:10:19.544Z|0x77c0|Mono: successfully reloaded assembly
-2024-08-24T14:10:19.563Z|0x77c0|- Finished resetting the current domain, in  0.997 seconds
-2024-08-24T14:10:19.564Z|0x77c0|Domain Reload Profiling: 1455ms
-	BeginReloadAssembly (144ms)
+2024-08-25T12:09:38.432Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:09:38.435Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:09:38.435Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:09:38.435Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:10:32.075Z|0x1138|========================================================================
+2024-08-25T12:10:32.075Z|0x1138|Received Prepare
+2024-08-25T12:10:33.029Z|0x1138|Caller must complete domain reload
+2024-08-25T12:10:33.138Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:10:33.591Z|0x1138|- Loaded All Assemblies, in  0.453 seconds
+2024-08-25T12:10:34.210Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:10:34.213Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:10:34.223Z|0x1138|Native extension for Android target not found
+2024-08-25T12:10:34.579Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:10:34.579Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:10:34.579Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:10:34.685Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:10:34.707Z|0x1138|- Finished resetting the current domain, in  1.116 seconds
+2024-08-25T12:10:34.708Z|0x1138|Domain Reload Profiling: 1565ms
+	BeginReloadAssembly (141ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (276ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (38ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1117ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (475ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:10:35.356Z|0x1138|Refreshing native plugins compatible for Editor in 5.29 ms, found 4 plugins.
+2024-08-25T12:10:35.356Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:10:35.385Z|0x3394|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:10:35.389Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6206.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:10:35.389Z|0x1138|Total: 3.789200 ms (FindLiveObjects: 0.312200 ms CreateObjectMapping: 0.186300 ms MarkObjects: 2.958300 ms  DeleteObjects: 0.331200 ms)
+
+2024-08-25T12:10:35.389Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:10:35.391Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:10:35.391Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:10:35.391Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:10:53.594Z|0x1138|========================================================================
+2024-08-25T12:10:53.594Z|0x1138|Received Prepare
+2024-08-25T12:10:53.858Z|0x1138|Caller must complete domain reload
+2024-08-25T12:10:53.915Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:10:54.386Z|0x1138|- Loaded All Assemblies, in  0.470 seconds
+2024-08-25T12:10:55.027Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:10:55.030Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:10:55.040Z|0x1138|Native extension for Android target not found
+2024-08-25T12:10:55.381Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:10:55.381Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:10:55.381Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:10:55.493Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:10:55.514Z|0x1138|- Finished resetting the current domain, in  1.128 seconds
+2024-08-25T12:10:55.515Z|0x1138|Domain Reload Profiling: 1593ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (242ms)
+		LoadAssemblies (300ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1128ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (462ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (84ms)
+			ProcessInitializeOnLoadAttributes (258ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+2024-08-25T12:10:56.323Z|0x1138|Refreshing native plugins compatible for Editor in 8.87 ms, found 4 plugins.
+2024-08-25T12:10:56.323Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:10:56.361Z|0x191c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:10:56.366Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6211.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:10:56.366Z|0x1138|Total: 4.990200 ms (FindLiveObjects: 0.472200 ms CreateObjectMapping: 0.275900 ms MarkObjects: 3.808600 ms  DeleteObjects: 0.431900 ms)
+
+2024-08-25T12:10:56.366Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:10:56.369Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:10:56.369Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:10:56.369Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:11:22.500Z|0x1138|========================================================================
+2024-08-25T12:11:22.500Z|0x1138|Received Prepare
+2024-08-25T12:11:22.801Z|0x1138|Caller must complete domain reload
+2024-08-25T12:11:22.856Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:11:23.335Z|0x1138|- Loaded All Assemblies, in  0.478 seconds
+2024-08-25T12:11:23.987Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:11:23.991Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:11:24.001Z|0x1138|Native extension for Android target not found
+2024-08-25T12:11:24.368Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:11:24.368Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:11:24.368Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:11:24.492Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:11:24.517Z|0x1138|- Finished resetting the current domain, in  1.182 seconds
+2024-08-25T12:11:24.518Z|0x1138|Domain Reload Profiling: 1655ms
+	BeginReloadAssembly (154ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (311ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1183ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (501ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (284ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+2024-08-25T12:11:25.388Z|0x1138|Refreshing native plugins compatible for Editor in 9.77 ms, found 4 plugins.
+2024-08-25T12:11:25.388Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:11:25.429Z|0x524c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:11:25.434Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6216.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:11:25.434Z|0x1138|Total: 5.239300 ms (FindLiveObjects: 0.456600 ms CreateObjectMapping: 0.414500 ms MarkObjects: 3.910400 ms  DeleteObjects: 0.456300 ms)
+
+2024-08-25T12:11:25.434Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:11:25.438Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:11:25.438Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:11:25.438Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:11:25.438Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:11:25.438Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:11:25.438Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:11:25.438Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:11:25.439Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:12:06.042Z|0x1138|========================================================================
+2024-08-25T12:12:06.042Z|0x1138|Received Prepare
+2024-08-25T12:12:06.680Z|0x1138|Caller must complete domain reload
+2024-08-25T12:12:06.846Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:12:07.686Z|0x1138|- Loaded All Assemblies, in  0.841 seconds
+2024-08-25T12:12:08.399Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:12:08.401Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:12:08.413Z|0x1138|Native extension for Android target not found
+2024-08-25T12:12:08.766Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:12:08.766Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:12:08.766Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:12:08.876Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:12:08.896Z|0x1138|- Finished resetting the current domain, in  1.209 seconds
+2024-08-25T12:12:08.897Z|0x1138|Domain Reload Profiling: 2045ms
+	BeginReloadAssembly (405ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (28ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (304ms)
+		LoadAssemblies (490ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (45ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1210ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (473ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (262ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+2024-08-25T12:12:09.543Z|0x1138|Refreshing native plugins compatible for Editor in 5.75 ms, found 4 plugins.
+2024-08-25T12:12:09.543Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:12:09.572Z|0x20f0|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:12:09.577Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6221.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:12:09.577Z|0x1138|Total: 3.793500 ms (FindLiveObjects: 0.331200 ms CreateObjectMapping: 0.191400 ms MarkObjects: 2.741500 ms  DeleteObjects: 0.528000 ms)
+
+2024-08-25T12:12:09.577Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:12:09.579Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:12:09.579Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:12:09.579Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:12:21.720Z|0x1138|========================================================================
+2024-08-25T12:12:21.720Z|0x1138|Received Prepare
+2024-08-25T12:12:21.968Z|0x1138|Caller must complete domain reload
+2024-08-25T12:12:22.029Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:12:22.514Z|0x1138|- Loaded All Assemblies, in  0.485 seconds
+2024-08-25T12:12:23.224Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:12:23.228Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:12:23.240Z|0x1138|Native extension for Android target not found
+2024-08-25T12:12:23.637Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:12:23.637Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:12:23.637Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:12:23.765Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:12:23.790Z|0x1138|- Finished resetting the current domain, in  1.276 seconds
+2024-08-25T12:12:23.791Z|0x1138|Domain Reload Profiling: 1755ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (314ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1276ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (537ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (304ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+2024-08-25T12:12:24.809Z|0x1138|Refreshing native plugins compatible for Editor in 10.93 ms, found 4 plugins.
+2024-08-25T12:12:24.809Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:12:24.860Z|0x3908|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:12:24.868Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6226.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:12:24.868Z|0x1138|Total: 8.067600 ms (FindLiveObjects: 0.712300 ms CreateObjectMapping: 0.448500 ms MarkObjects: 5.733600 ms  DeleteObjects: 1.170600 ms)
+
+2024-08-25T12:12:24.868Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:12:24.874Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:12:24.874Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:12:24.874Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:20:37.225Z|0x1138|========================================================================
+2024-08-25T12:20:37.225Z|0x1138|Received Prepare
+2024-08-25T12:20:37.434Z|0x1138|Caller must complete domain reload
+2024-08-25T12:20:37.481Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:20:37.914Z|0x1138|- Loaded All Assemblies, in  0.433 seconds
+2024-08-25T12:20:38.608Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:20:38.611Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:20:38.624Z|0x1138|Native extension for Android target not found
+2024-08-25T12:20:38.993Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:20:38.993Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:20:38.993Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:20:39.107Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:20:39.130Z|0x1138|- Finished resetting the current domain, in  1.216 seconds
+2024-08-25T12:20:39.130Z|0x1138|Domain Reload Profiling: 1644ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (227ms)
+		LoadAssemblies (279ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1217ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (497ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (278ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+2024-08-25T12:20:39.828Z|0x1138|Refreshing native plugins compatible for Editor in 7.55 ms, found 4 plugins.
+2024-08-25T12:20:39.828Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:20:39.860Z|0x3e18|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:20:39.866Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6231.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:20:39.866Z|0x1138|Total: 4.518000 ms (FindLiveObjects: 0.435300 ms CreateObjectMapping: 0.228000 ms MarkObjects: 3.456900 ms  DeleteObjects: 0.396100 ms)
+
+2024-08-25T12:20:39.866Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:20:39.868Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:20:39.868Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:20:39.868Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:22:31.718Z|0x1138|========================================================================
+2024-08-25T12:22:31.718Z|0x1138|Received Prepare
+2024-08-25T12:22:32.014Z|0x1138|Caller must complete domain reload
+2024-08-25T12:22:32.069Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:22:32.472Z|0x1138|- Loaded All Assemblies, in  0.404 seconds
+2024-08-25T12:22:33.120Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:22:33.124Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:22:33.136Z|0x1138|Native extension for Android target not found
+2024-08-25T12:22:33.518Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:22:33.518Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:22:33.518Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:22:33.644Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:22:33.669Z|0x1138|- Finished resetting the current domain, in  1.195 seconds
+2024-08-25T12:22:33.669Z|0x1138|Domain Reload Profiling: 1594ms
+	BeginReloadAssembly (132ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
 	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (256ms)
-		LoadAssemblies (289ms)
+	LoadAllAssembliesAndSetupDomain (210ms)
+		LoadAssemblies (260ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (39ms)
-			TypeCache.Refresh (10ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (997ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1195ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (388ms)
+		SetupLoadedEditorAssemblies (522ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+2024-08-25T12:22:34.683Z|0x1138|Refreshing native plugins compatible for Editor in 9.38 ms, found 4 plugins.
+2024-08-25T12:22:34.683Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:22:34.730Z|0x5c1c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:22:34.736Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6236.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:22:34.736Z|0x1138|Total: 5.951800 ms (FindLiveObjects: 0.504800 ms CreateObjectMapping: 0.288700 ms MarkObjects: 4.630300 ms  DeleteObjects: 0.526400 ms)
+
+2024-08-25T12:22:34.736Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:22:34.739Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:22:34.739Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:22:34.739Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:22:34.740Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:22:34.740Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:22:34.740Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:22:34.740Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:22:34.740Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:23:35.507Z|0x1138|========================================================================
+2024-08-25T12:23:35.507Z|0x1138|Received Prepare
+2024-08-25T12:23:35.720Z|0x1138|Caller must complete domain reload
+2024-08-25T12:23:35.768Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:23:36.211Z|0x1138|- Loaded All Assemblies, in  0.443 seconds
+2024-08-25T12:23:36.851Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:23:36.854Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:23:36.864Z|0x1138|Native extension for Android target not found
+2024-08-25T12:23:37.239Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:23:37.239Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:23:37.239Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:23:37.358Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:23:37.381Z|0x1138|- Finished resetting the current domain, in  1.168 seconds
+2024-08-25T12:23:37.381Z|0x1138|Domain Reload Profiling: 1607ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (221ms)
+		LoadAssemblies (275ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1169ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (504ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+2024-08-25T12:23:38.225Z|0x1138|Refreshing native plugins compatible for Editor in 7.42 ms, found 4 plugins.
+2024-08-25T12:23:38.225Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:23:38.266Z|0x5f84|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:23:38.271Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6241.
+Memory consumption went from 199.7 MB to 198.9 MB.
+2024-08-25T12:23:38.272Z|0x1138|Total: 5.739600 ms (FindLiveObjects: 0.496800 ms CreateObjectMapping: 0.257800 ms MarkObjects: 4.040200 ms  DeleteObjects: 0.942700 ms)
+
+2024-08-25T12:23:38.272Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:23:38.275Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:23:38.275Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:23:38.275Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:23:38.276Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:23:38.276Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:24:46.561Z|0x1138|========================================================================
+2024-08-25T12:24:46.561Z|0x1138|Received Prepare
+2024-08-25T12:24:46.822Z|0x1138|Caller must complete domain reload
+2024-08-25T12:24:46.880Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:24:47.403Z|0x1138|- Loaded All Assemblies, in  0.524 seconds
+2024-08-25T12:24:48.109Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:24:48.113Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:24:48.125Z|0x1138|Native extension for Android target not found
+2024-08-25T12:24:48.493Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:24:48.493Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:24:48.493Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:24:48.612Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:24:48.634Z|0x1138|- Finished resetting the current domain, in  1.229 seconds
+2024-08-25T12:24:48.634Z|0x1138|Domain Reload Profiling: 1747ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (294ms)
+		LoadAssemblies (329ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (45ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1229ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (503ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (43ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (280ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+2024-08-25T12:24:49.309Z|0x1138|Refreshing native plugins compatible for Editor in 6.14 ms, found 4 plugins.
+2024-08-25T12:24:49.309Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:24:49.338Z|0x3f04|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:24:49.343Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6246.
+Memory consumption went from 199.7 MB to 198.9 MB.
+2024-08-25T12:24:49.343Z|0x1138|Total: 3.951600 ms (FindLiveObjects: 0.348000 ms CreateObjectMapping: 0.279400 ms MarkObjects: 2.971100 ms  DeleteObjects: 0.352100 ms)
+
+2024-08-25T12:24:49.343Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:24:49.345Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:24:49.345Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:24:49.345Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:24:54.692Z|0x1138|========================================================================
+2024-08-25T12:24:54.693Z|0x1138|Received Prepare
+2024-08-25T12:24:54.933Z|0x1138|Caller must complete domain reload
+2024-08-25T12:24:54.991Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:24:55.478Z|0x1138|- Loaded All Assemblies, in  0.487 seconds
+2024-08-25T12:24:56.246Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:24:56.249Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:24:56.263Z|0x1138|Native extension for Android target not found
+2024-08-25T12:24:56.715Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:24:56.715Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:24:56.715Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:24:56.872Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:24:56.902Z|0x1138|- Finished resetting the current domain, in  1.424 seconds
+2024-08-25T12:24:56.903Z|0x1138|Domain Reload Profiling: 1907ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (310ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1425ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (620ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (44ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (349ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+2024-08-25T12:24:58.263Z|0x1138|Refreshing native plugins compatible for Editor in 13.80 ms, found 4 plugins.
+2024-08-25T12:24:58.263Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:24:58.320Z|0x53ec|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:24:58.327Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6251.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:24:58.327Z|0x1138|Total: 7.060400 ms (FindLiveObjects: 0.620200 ms CreateObjectMapping: 0.515500 ms MarkObjects: 5.324600 ms  DeleteObjects: 0.597800 ms)
+
+2024-08-25T12:24:58.327Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:24:58.333Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:24:58.333Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:24:58.333Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:27:05.675Z|0x1138|========================================================================
+2024-08-25T12:27:05.675Z|0x1138|Received Prepare
+2024-08-25T12:27:06.179Z|0x1138|Caller must complete domain reload
+2024-08-25T12:27:06.236Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:27:06.712Z|0x1138|- Loaded All Assemblies, in  0.476 seconds
+2024-08-25T12:27:07.366Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:27:07.369Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:27:07.378Z|0x1138|Native extension for Android target not found
+2024-08-25T12:27:07.745Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:27:07.745Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:27:07.745Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:27:07.852Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:27:07.873Z|0x1138|- Finished resetting the current domain, in  1.162 seconds
+2024-08-25T12:27:07.874Z|0x1138|Domain Reload Profiling: 1633ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (254ms)
+		LoadAssemblies (281ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1163ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (484ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (279ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:27:08.566Z|0x1138|Refreshing native plugins compatible for Editor in 5.47 ms, found 4 plugins.
+2024-08-25T12:27:08.566Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:27:08.595Z|0x57bc|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:27:08.598Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6256.
+Memory consumption went from 199.7 MB to 198.9 MB.
+2024-08-25T12:27:08.598Z|0x1138|Total: 3.925600 ms (FindLiveObjects: 0.346900 ms CreateObjectMapping: 0.211000 ms MarkObjects: 3.015700 ms  DeleteObjects: 0.350800 ms)
+
+2024-08-25T12:27:08.599Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:27:08.602Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:27:08.602Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:27:08.602Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:27:09.885Z|0x1138|========================================================================
+2024-08-25T12:27:09.885Z|0x1138|Received Prepare
+2024-08-25T12:27:10.095Z|0x1138|Caller must complete domain reload
+2024-08-25T12:27:10.147Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:27:10.582Z|0x1138|- Loaded All Assemblies, in  0.435 seconds
+2024-08-25T12:27:11.208Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:27:11.210Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:27:11.221Z|0x1138|Native extension for Android target not found
+2024-08-25T12:27:11.558Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:27:11.558Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:27:11.558Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:27:11.668Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:27:11.688Z|0x1138|- Finished resetting the current domain, in  1.105 seconds
+2024-08-25T12:27:11.688Z|0x1138|Domain Reload Profiling: 1536ms
+	BeginReloadAssembly (139ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (233ms)
+		LoadAssemblies (285ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1106ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (457ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (259ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+2024-08-25T12:27:12.469Z|0x1138|Refreshing native plugins compatible for Editor in 6.71 ms, found 4 plugins.
+2024-08-25T12:27:12.469Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:27:12.506Z|0x5030|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:27:12.511Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6261.
+Memory consumption went from 199.7 MB to 198.9 MB.
+2024-08-25T12:27:12.511Z|0x1138|Total: 4.672900 ms (FindLiveObjects: 0.404700 ms CreateObjectMapping: 0.239200 ms MarkObjects: 3.479800 ms  DeleteObjects: 0.547700 ms)
+
+2024-08-25T12:27:12.511Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:27:12.513Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:27:12.513Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:27:12.513Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:27:25.321Z|0x1138|========================================================================
+2024-08-25T12:27:25.321Z|0x1138|Received Prepare
+2024-08-25T12:27:25.556Z|0x1138|Caller must complete domain reload
+2024-08-25T12:27:25.611Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:27:26.079Z|0x1138|- Loaded All Assemblies, in  0.468 seconds
+2024-08-25T12:27:26.704Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:27:26.706Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:27:26.717Z|0x1138|Native extension for Android target not found
+2024-08-25T12:27:27.053Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:27:27.053Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:27:27.053Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:27:27.163Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:27:27.186Z|0x1138|- Finished resetting the current domain, in  1.105 seconds
+2024-08-25T12:27:27.186Z|0x1138|Domain Reload Profiling: 1567ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (240ms)
+		LoadAssemblies (304ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1106ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (457ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (259ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:27:28.007Z|0x1138|Refreshing native plugins compatible for Editor in 7.60 ms, found 4 plugins.
+2024-08-25T12:27:28.007Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:27:28.045Z|0x2e38|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:27:28.050Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6266.
+Memory consumption went from 199.8 MB to 198.9 MB.
+2024-08-25T12:27:28.051Z|0x1138|Total: 4.813900 ms (FindLiveObjects: 0.411700 ms CreateObjectMapping: 0.237900 ms MarkObjects: 3.753500 ms  DeleteObjects: 0.409800 ms)
+
+2024-08-25T12:27:28.051Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:27:28.053Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:27:28.053Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:27:28.053Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:30:13.518Z|0x1138|========================================================================
+2024-08-25T12:30:13.518Z|0x1138|Received Prepare
+2024-08-25T12:30:13.929Z|0x1138|Caller must complete domain reload
+2024-08-25T12:30:14.033Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:30:14.535Z|0x1138|- Loaded All Assemblies, in  0.502 seconds
+2024-08-25T12:30:15.189Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:30:15.192Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:30:15.203Z|0x1138|Native extension for Android target not found
+2024-08-25T12:30:15.532Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:30:15.532Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:30:15.532Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:30:15.634Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:30:15.653Z|0x1138|- Finished resetting the current domain, in  1.118 seconds
+2024-08-25T12:30:15.654Z|0x1138|Domain Reload Profiling: 1615ms
+	BeginReloadAssembly (226ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (208ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1118ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (443ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (252ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:30:16.256Z|0x1138|Refreshing native plugins compatible for Editor in 4.49 ms, found 4 plugins.
+2024-08-25T12:30:16.256Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:30:16.284Z|0x4adc|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:30:16.287Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6271.
+Memory consumption went from 199.8 MB to 198.9 MB.
+2024-08-25T12:30:16.287Z|0x1138|Total: 3.483600 ms (FindLiveObjects: 0.304600 ms CreateObjectMapping: 0.311900 ms MarkObjects: 2.563100 ms  DeleteObjects: 0.303000 ms)
+
+2024-08-25T12:30:16.287Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:30:16.289Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:30:16.289Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:30:16.289Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:30:34.342Z|0x1138|========================================================================
+2024-08-25T12:30:34.342Z|0x1138|Received Prepare
+2024-08-25T12:30:34.531Z|0x1138|Caller must complete domain reload
+2024-08-25T12:30:34.577Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:30:34.953Z|0x1138|- Loaded All Assemblies, in  0.377 seconds
+2024-08-25T12:30:35.514Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:30:35.517Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:30:35.527Z|0x1138|Native extension for Android target not found
+2024-08-25T12:30:35.849Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:30:35.849Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:30:35.849Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:30:35.951Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:30:35.970Z|0x1138|- Finished resetting the current domain, in  1.015 seconds
+2024-08-25T12:30:35.970Z|0x1138|Domain Reload Profiling: 1388ms
+	BeginReloadAssembly (122ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (193ms)
+		LoadAssemblies (240ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1016ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (437ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (248ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+2024-08-25T12:30:36.591Z|0x1138|Refreshing native plugins compatible for Editor in 4.84 ms, found 4 plugins.
+2024-08-25T12:30:36.591Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:30:36.619Z|0x2018|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:30:36.624Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6276.
+Memory consumption went from 199.7 MB to 198.8 MB.
+2024-08-25T12:30:36.624Z|0x1138|Total: 4.207600 ms (FindLiveObjects: 0.342500 ms CreateObjectMapping: 0.278000 ms MarkObjects: 3.193600 ms  DeleteObjects: 0.392600 ms)
+
+2024-08-25T12:30:36.624Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:30:36.626Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:30:36.626Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:30:36.626Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:31:47.820Z|0x1138|========================================================================
+2024-08-25T12:31:47.820Z|0x1138|Received Prepare
+2024-08-25T12:31:48.003Z|0x1138|Caller must complete domain reload
+2024-08-25T12:31:48.046Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:31:48.425Z|0x1138|- Loaded All Assemblies, in  0.379 seconds
+2024-08-25T12:31:49.020Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:31:49.023Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:31:49.033Z|0x1138|Native extension for Android target not found
+2024-08-25T12:31:49.368Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:31:49.368Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:31:49.368Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:31:49.470Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:31:49.490Z|0x1138|- Finished resetting the current domain, in  1.063 seconds
+2024-08-25T12:31:49.490Z|0x1138|Domain Reload Profiling: 1438ms
+	BeginReloadAssembly (121ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (198ms)
+		LoadAssemblies (247ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1064ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (448ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+2024-08-25T12:31:50.091Z|0x1138|Refreshing native plugins compatible for Editor in 4.98 ms, found 4 plugins.
+2024-08-25T12:31:50.091Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:31:50.121Z|0x5368|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:31:50.123Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6281.
+Memory consumption went from 199.8 MB to 198.9 MB.
+2024-08-25T12:31:50.125Z|0x1138|Total: 3.737600 ms (FindLiveObjects: 0.400300 ms CreateObjectMapping: 0.204800 ms MarkObjects: 2.788700 ms  DeleteObjects: 0.342600 ms)
+
+2024-08-25T12:31:50.125Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:31:50.127Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:31:50.127Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:31:50.127Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:33:34.256Z|0x1138|========================================================================
+2024-08-25T12:33:34.256Z|0x1138|Received Prepare
+2024-08-25T12:33:34.668Z|0x1138|Caller must complete domain reload
+2024-08-25T12:33:34.808Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:33:35.505Z|0x1138|- Loaded All Assemblies, in  0.697 seconds
+2024-08-25T12:33:36.100Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:33:36.103Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:33:36.112Z|0x1138|Native extension for Android target not found
+2024-08-25T12:33:36.410Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:33:36.410Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:33:36.410Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:33:36.499Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:33:36.515Z|0x1138|- Finished resetting the current domain, in  1.010 seconds
+2024-08-25T12:33:36.516Z|0x1138|Domain Reload Profiling: 1697ms
+	BeginReloadAssembly (267ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (23ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (316ms)
+		LoadAssemblies (411ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (46ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1010ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (398ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (31ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (217ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (226ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (11ms)
-2024-08-24T14:10:20.162Z|0x77c0|Refreshing native plugins compatible for Editor in 5.13 ms, found 4 plugins.
-2024-08-24T14:10:20.162Z|0x77c0|Preloading 0 native plugins for Editor in 0.00 ms.
-2024-08-24T14:10:20.186Z|0x6b8c|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
-2024-08-24T14:10:20.190Z|0x77c0|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6177.
-Memory consumption went from 200.2 MB to 199.3 MB.
-2024-08-24T14:10:20.190Z|0x77c0|Total: 3.384400 ms (FindLiveObjects: 0.324400 ms CreateObjectMapping: 0.182900 ms MarkObjects: 2.572500 ms  DeleteObjects: 0.303300 ms)
+2024-08-25T12:33:37.074Z|0x1138|Refreshing native plugins compatible for Editor in 4.50 ms, found 4 plugins.
+2024-08-25T12:33:37.074Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:33:37.101Z|0x2240|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:33:37.105Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6286.
+Memory consumption went from 199.8 MB to 198.9 MB.
+2024-08-25T12:33:37.105Z|0x1138|Total: 3.401500 ms (FindLiveObjects: 0.306100 ms CreateObjectMapping: 0.182700 ms MarkObjects: 2.593100 ms  DeleteObjects: 0.318300 ms)
 
-2024-08-24T14:10:20.190Z|0x77c0|Prepare: number of updated asset objects reloaded= 0
-2024-08-24T14:10:20.192Z|0x77c0|AssetImportParameters requested are different than current active one (requested -> active):
-2024-08-24T14:10:20.192Z|0x77c0|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-2024-08-24T14:10:20.192Z|0x77c0|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:33:37.105Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:33:37.107Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:33:37.108Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:33:37.108Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:33:43.272Z|0x1138|========================================================================
+2024-08-25T12:33:43.272Z|0x1138|Received Prepare
+2024-08-25T12:33:43.478Z|0x1138|Caller must complete domain reload
+2024-08-25T12:33:43.528Z|0x1138|Begin MonoManager ReloadAssembly
+2024-08-25T12:33:43.949Z|0x1138|- Loaded All Assemblies, in  0.421 seconds
+2024-08-25T12:33:44.525Z|0x1138|Native extension for WindowsStandalone target not found
+2024-08-25T12:33:44.527Z|0x1138|Native extension for iOS target not found
+2024-08-25T12:33:44.535Z|0x1138|Native extension for Android target not found
+2024-08-25T12:33:44.826Z|0x1138|[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+2024-08-25T12:33:44.826Z|0x1138|[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+2024-08-25T12:33:44.826Z|0x1138|[Package Manager] Cannot connect to Unity Package Manager local server
+2024-08-25T12:33:44.935Z|0x1138|Mono: successfully reloaded assembly
+2024-08-25T12:33:44.953Z|0x1138|- Finished resetting the current domain, in  1.004 seconds
+2024-08-25T12:33:44.954Z|0x1138|Domain Reload Profiling: 1421ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (217ms)
+		LoadAssemblies (252ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (35ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1005ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (409ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+2024-08-25T12:33:45.502Z|0x1138|Refreshing native plugins compatible for Editor in 4.52 ms, found 4 plugins.
+2024-08-25T12:33:45.502Z|0x1138|Preloading 0 native plugins for Editor in 0.00 ms.
+2024-08-25T12:33:45.530Z|0x60c0|Unloading 5541 Unused Serialized files (Serialized files now loaded: 0)
+2024-08-25T12:33:45.534Z|0x1138|Unloading 35 unused Assets / (0.9 MB). Loaded Objects now: 6291.
+Memory consumption went from 199.8 MB to 198.9 MB.
+2024-08-25T12:33:45.534Z|0x1138|Total: 3.710600 ms (FindLiveObjects: 0.302600 ms CreateObjectMapping: 0.168800 ms MarkObjects: 2.937400 ms  DeleteObjects: 0.300900 ms)
+
+2024-08-25T12:33:45.534Z|0x1138|Prepare: number of updated asset objects reloaded= 0
+2024-08-25T12:33:45.536Z|0x1138|AssetImportParameters requested are different than current active one (requested -> active):
+2024-08-25T12:33:45.536Z|0x1138|  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+2024-08-25T12:33:45.536Z|0x1138|  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

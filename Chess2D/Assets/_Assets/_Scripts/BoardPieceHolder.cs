@@ -1,12 +1,13 @@
-using System;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
-public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,IPointerUpHandler {
+public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
+    [SerializeField] private HoveringPieceView hoveringPieceView;
     [SerializeField] private Color freeSquareHightingColor = Color.green,opponentSquareColor = Color.red;
+    [SerializeField] private Color originalColor;
     [SerializeField] private TextMeshProUGUI indexText;
     [SerializeField] private RectTransform currentRect;
     [SerializeField] private Image pieceBg;
@@ -17,24 +18,30 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
     [SerializeField] private Sprite b_rook,w_rook;
     [SerializeField] private Sprite b_queen,w_queen;
     [SerializeField] private Piece piece;
-    [SerializeField] private HoveringPieceView hoveringPieceView;
     private Board board;
-    public Color originalColor;
     private List<BoardPieceHolder> boardPieceHoldersToMove;
     private bool hasMoved;
-
+    private void Start() {
+        boardPieceHoldersToMove = new List<BoardPieceHolder>();
+    }
     public void OnDrop(PointerEventData eventData) {
-        Debug.Log("Dropping: " + eventData.pointerDrag.transform.name);
+        // Debug.Log("Dropping: " + eventData.pointerDrag.transform.name);
         if(eventData.pointerDrag.TryGetComponent(out HoveringPieceView hoveringBox)){
-            if(this.piece != null){
-                if(this.piece != hoveringBox.GetPiece()){
-                    hasMoved = true;
+            if(CanDropOn(hoveringBox.GetBoardPieceHolder())){
+                if(piece != null){
+                    if(piece != hoveringBox.GetPiece()){
+                        hasMoved = true;
+                    }
                 }
+                hoveringBox.ResetHolderPiece();
+                SetPiece(hoveringBox.GetPiece());
+                ResetColor();
             }
-            hoveringBox.ResetHolderPiece();
-            SetPiece(hoveringBox.GetPiece());
         }
 
+    }
+    public bool CanDropOn(BoardPieceHolder boardPieceHolder){
+        return boardPieceHolder.GetAvailableMoves().Contains(this);
     }
     public Piece GetPiece(){
         return piece;
@@ -87,6 +94,9 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
     }
     public void CalculateAvailableDirection(){
         switch(piece.pieceType){
+            default:
+                boardPieceHoldersToMove = new List<BoardPieceHolder>();
+            break;
             case PieceType.Bishop:
                 boardPieceHoldersToMove = board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
             break;
@@ -107,6 +117,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
             break;
         }
         foreach(var pieceToMove in boardPieceHoldersToMove){
+            Debug.Log("Piece: " + pieceToMove.GetPiece().pieceType);
             pieceToMove.HighlightColor(pieceToMove.OpponentSquare(piece.colorType));
         }
     }
@@ -126,10 +137,13 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
         return piece.IsEmptyPieceType();
     }
     private bool OpponentSquare(ColorType otherPieceColor){
-        if(otherPieceColor == ColorType.None){
-            return false;
+        if(piece.colorType == ColorType.White && otherPieceColor == ColorType.Black){
+            return true;
         }
-        return otherPieceColor != piece.colorType;
+        if(piece.colorType == ColorType.Black && otherPieceColor == ColorType.White){
+            return true;
+        }
+        return false;
     }
     public bool IsOpponent(ColorType otherPiece){
         if(piece.colorType == ColorType.None){
@@ -140,6 +154,9 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
         }
         return false;
     }
+    public ColorType GetColorType(){
+        return piece.colorType;
+    }
     public void SetBoardIndex(int file, int rank) {
         indexText.SetText(string.Concat(file,",",rank));
     }
@@ -147,7 +164,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
         CalculateAvailableDirection();
     }
 
-    public void OnPointerUp(PointerEventData eventData) {
-        ResetColor();
+    public List<BoardPieceHolder> GetAvailableMoves(){
+        return boardPieceHoldersToMove;
     }
 }
