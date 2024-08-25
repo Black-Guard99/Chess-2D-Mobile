@@ -21,10 +21,16 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
     private Board board;
     public Color originalColor;
     private List<BoardPieceHolder> boardPieceHoldersToMove;
+    private bool hasMoved;
 
     public void OnDrop(PointerEventData eventData) {
         Debug.Log("Dropping: " + eventData.pointerDrag.transform.name);
         if(eventData.pointerDrag.TryGetComponent(out HoveringPieceView hoveringBox)){
+            if(this.piece != null){
+                if(this.piece != hoveringBox.GetPiece()){
+                    hasMoved = true;
+                }
+            }
             hoveringBox.ResetHolderPiece();
             SetPiece(hoveringBox.GetPiece());
         }
@@ -41,6 +47,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
         ResetColor();
     }
     public void Init(Vector2 pos,Color boardColor,Board board,Canvas canvas){
+        hasMoved = false;
         originalColor = boardColor;
         ResetColor();
         this.board = board;
@@ -79,11 +86,32 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
         return piece.activePos;
     }
     public void CalculateAvailableDirection(){
-        boardPieceHoldersToMove = board.GetRookMoveToDirectionsFromStartingPoint(piece.pieceType,piece.activePos,piece.colorType);
-        boardPieceHoldersToMove.ForEach(b => b.HighlightColor(b.IsOpponent(piece.colorType)));
+        switch(piece.pieceType){
+            case PieceType.Bishop:
+                boardPieceHoldersToMove = board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
+            break;
+            case PieceType.King:
+                boardPieceHoldersToMove = board.GetKingMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
+            break;
+            case PieceType.Knight:
+                boardPieceHoldersToMove = board.GetKnightMoveDirection(piece.activePos,piece.colorType);
+            break;
+            case PieceType.Pawn:
+                boardPieceHoldersToMove = board.GetPawnMoveToDirectionsFromStartingPoint(hasMoved,piece.activePos,piece.colorType);
+            break;
+            case PieceType.Queen:
+                boardPieceHoldersToMove = board.GetQueenMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
+            break;
+            case PieceType.Rook:
+                boardPieceHoldersToMove = board.GetRookMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
+            break;
+        }
+        foreach(var pieceToMove in boardPieceHoldersToMove){
+            pieceToMove.HighlightColor(pieceToMove.OpponentSquare(piece.colorType));
+        }
     }
     public void HighlightColor(bool IsOpponentColor){
-        pieceBg.color = IsOpponentColor ? freeSquareHightingColor : opponentSquareColor;
+        pieceBg.color = IsOpponentColor ? opponentSquareColor : freeSquareHightingColor;
     }
     public void ResetColor(){
         pieceBg.color = originalColor;
@@ -97,11 +125,17 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler,I
     public bool IsEmptyPiece(){
         return piece.IsEmptyPieceType();
     }
-    public bool IsOpponent(ColorType friendlyPieceType){
+    private bool OpponentSquare(ColorType otherPieceColor){
+        if(otherPieceColor == ColorType.None){
+            return false;
+        }
+        return otherPieceColor != piece.colorType;
+    }
+    public bool IsOpponent(ColorType otherPiece){
         if(piece.colorType == ColorType.None){
             return true;
         }
-        if(piece.colorType != friendlyPieceType){
+        if(piece.colorType != otherPiece){
             return true;
         }
         return false;

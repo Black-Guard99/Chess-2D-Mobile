@@ -11,7 +11,8 @@ public class Board : MonoBehaviour {
     [SerializeField] private Color lightColor = Color.white,darkColor = Color.black;
     [SerializeField] private RectTransform boardHolder;
     [SerializeField] private BoardPieceHolder[,] board;
-    [SerializeField] private DirectionChecks[] allDirectionsToCheckArray;
+    [SerializeField] private Vector2[] knightCheckOffset;
+    [SerializeField] private Vector2[] directionToCheckRook,directionToCheckBishop,directionToCheckKing,directionToCheckQueen;
     [SerializeField] private List<BoardPieceHolder> boardPieceHoldersList;
     private void Start() {
         board = new BoardPieceHolder[BOARD_SIZE,BOARD_SIZE];
@@ -32,7 +33,7 @@ public class Board : MonoBehaviour {
         SetPieces();
     }
     private void SetPieces(){
-        var pieceTypeFromSymbole = new Dictionary<char,PieceType>(){
+        var pieceTypeFromSymbol = new Dictionary<char,PieceType>(){
             ['k'] = PieceType.King,['p'] = PieceType.Pawn,['n'] = PieceType.Knight,['b'] = PieceType.Bishop,['r'] = PieceType.Rook,['q'] = PieceType.Queen
         };
         string fenBoard = findString.Split(' ')[0];
@@ -46,7 +47,7 @@ public class Board : MonoBehaviour {
                     file += (int)char.GetNumericValue(symbol);
                 }else{
                     ColorType pieceColor = char.IsUpper(symbol)? ColorType.White : ColorType.Black;
-                    PieceType pieceType = pieceTypeFromSymbole[char.ToLower(symbol)];
+                    PieceType pieceType = pieceTypeFromSymbol[char.ToLower(symbol)];
                     board[file,rank].SetPiece(new Piece{pieceType = pieceType,colorType = pieceColor});
                     file++;
                 }
@@ -54,18 +55,16 @@ public class Board : MonoBehaviour {
         }
     }
     
-    public List<BoardPieceHolder> GetRookMoveToDirectionsFromStartingPoint(PieceType pieceType,Vector2 startingPoint,ColorType friendlyPieceType){
-        DirectionChecks directionChecks = allDirectionsToCheckArray.FirstOrDefault(d => d.pieceType == pieceType);
+    public List<BoardPieceHolder> GetRookMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
         boardPieceHoldersList = new List<BoardPieceHolder>();
-        float range = directionChecks.maxCheckIteration < 1 ? BOARD_SIZE : directionChecks.maxCheckIteration;
-        foreach(Vector2 direction in directionChecks.checkingDirections){
-            for (int i = 1; i < range; i++) {
+        float range = BOARD_SIZE;
+        foreach(Vector2 direction in directionToCheckRook){
+            for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
                 Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
-                        // availableMovesDirection.Add(nextCoords);
                         boardPieceHoldersList.Add(piece);
                     }else{
                         if(piece.IsOpponent(friendlyPieceType)){
@@ -79,7 +78,126 @@ public class Board : MonoBehaviour {
         return boardPieceHoldersList;
 
     }
+    public List<BoardPieceHolder> GetPawnMoveToDirectionsFromStartingPoint(bool HasMoved,Vector2 startingPoint,ColorType currentPiece){
+        boardPieceHoldersList = new List<BoardPieceHolder>();
+        float range = HasMoved ? 1: 2;
+        Vector2 directionToCheckPawn = currentPiece == ColorType.White ? new Vector2(0,1):new Vector2(0,-1); 
+        for (int i = 1; i <= range; i++) {
+            Vector2 nextCoords = startingPoint + directionToCheckPawn * squareSize * i;
+            if(CheckCoordsInsideBoard(nextCoords)){
+                BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
+                if(piece.IsEmptyPiece()){
+                    boardPieceHoldersList.Add(piece);
+                }else{
+                    break;
+                }
+            }
+        }
+        Vector2[] takeDirection = new Vector2[]{new Vector2(1,directionToCheckPawn.y),new Vector2(-1,directionToCheckPawn.y)};
+        Debug.Log(takeDirection);
+        for (int i = 0; i < takeDirection.Length; i++) {
+            Vector2 nextCoords = startingPoint + takeDirection[i] * squareSize;
+            if(CheckCoordsInsideBoard(nextCoords)){
+                BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
+
+                if(!piece.IsEmptyPiece()){
+                    if(piece.IsOpponent(currentPiece)){
+                        boardPieceHoldersList.Add(piece);
+                    }
+                }
+            }
+        }
+        return boardPieceHoldersList;
+
+    }
+    public List<BoardPieceHolder> GetKingMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
+        boardPieceHoldersList = new List<BoardPieceHolder>();
+        float range = 2;
+        foreach(Vector2 direction in directionToCheckKing){
+            for (int i = 1; i < range; i++) {
+                Vector2 nextCoords = startingPoint + direction * squareSize * i;
+                Debug.Log("Coord: " + nextCoords);
+                if(CheckCoordsInsideBoard(nextCoords)){
+                    BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
+                    if(piece.IsEmptyPiece()){
+                        boardPieceHoldersList.Add(piece);
+                    }else{
+                        if(piece.IsOpponent(friendlyPieceType)){
+                            boardPieceHoldersList.Add(piece);
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        return boardPieceHoldersList;
+
+    }
+    public List<BoardPieceHolder> GetKnightMoveDirection(Vector2 startingPoint,ColorType friendlyPieceType){
+        boardPieceHoldersList = new List<BoardPieceHolder>();
+        for (int i = 0; i < knightCheckOffset.Length; i++) {
+            Vector2 nextCoords = startingPoint + knightCheckOffset[i] * squareSize;
+            Debug.Log("Coord: " + nextCoords);
+            if(CheckCoordsInsideBoard(nextCoords)){
+                BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
+                if(piece.IsOpponent(friendlyPieceType) || piece.IsEmptyPiece()){
+                    boardPieceHoldersList.Add(piece);
+                }
+            }
+            
+        }
+        return boardPieceHoldersList;
+    }
    
+    public List<BoardPieceHolder> GetBishopMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
+        boardPieceHoldersList = new List<BoardPieceHolder>();
+        float range = BOARD_SIZE;
+        foreach(Vector2 direction in directionToCheckBishop){
+            for (int i = 1; i <= range; i++) {
+                Vector2 nextCoords = startingPoint + direction * squareSize * i;
+                Debug.Log("Coord: " + nextCoords);
+                if(CheckCoordsInsideBoard(nextCoords)){
+                    BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
+                    if(piece.IsEmptyPiece()){
+                        boardPieceHoldersList.Add(piece);
+                    }else{
+                        if(piece.IsOpponent(friendlyPieceType)){
+                            boardPieceHoldersList.Add(piece);
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        return boardPieceHoldersList;
+
+    }
+    public List<BoardPieceHolder> GetQueenMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
+        boardPieceHoldersList = new List<BoardPieceHolder>();
+        float range = BOARD_SIZE;
+        foreach(Vector2 direction in directionToCheckQueen){
+            for (int i = 1; i <= range; i++) {
+                Vector2 nextCoords = startingPoint + direction * squareSize * i;
+                Debug.Log("Coord: " + nextCoords);
+                if(CheckCoordsInsideBoard(nextCoords)){
+                    BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
+                    if(piece.IsEmptyPiece()){
+                        boardPieceHoldersList.Add(piece);
+                    }else{
+                        if(piece.IsOpponent(friendlyPieceType)){
+                            boardPieceHoldersList.Add(piece);
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        return boardPieceHoldersList;
+
+    }
+
+
+
     public BoardPieceHolder GetBoardCoordFromPos(Vector2 pos){
         int x = Mathf.FloorToInt(pos.x / squareSize);
         int y = Mathf.FloorToInt(pos.y / squareSize);
