@@ -25,7 +25,6 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
         boardPieceHoldersToMove = new List<BoardPieceHolder>();
     }
     public void OnDrop(PointerEventData eventData) {
-        // Debug.Log("Dropping: " + eventData.pointerDrag.transform.name);
         if(eventData.pointerDrag.TryGetComponent(out HoveringPieceView hoveringBox)){
             if(CanDropOn(hoveringBox.GetBoardPieceHolder())){
                 if(piece != null){
@@ -38,7 +37,10 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
                 ResetColor();
             }
         }
-
+        ChessGameController.Instance.UpdatePieceForPlayers();
+    }
+    public void OnPointerDown(PointerEventData eventData) {
+        CalculateAvailableDirection();
     }
     public bool CanDropOn(BoardPieceHolder boardPieceHolder){
         return boardPieceHolder.GetAvailableMoves().Contains(this);
@@ -69,22 +71,22 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
                 hoveringPieceView.gameObject.SetActive(false);
             break;
             case PieceType.King:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_king : w_king);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_king : w_king);
             break;
             case PieceType.Pawn:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_pawn : w_pawn);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_pawn : w_pawn);
             break;
             case PieceType.Knight:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_knight : w_knight);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_knight : w_knight);
             break;
             case PieceType.Bishop:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_bishop : w_bishop);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_bishop : w_bishop);
             break;
             case PieceType.Rook:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_rook : w_rook);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_rook : w_rook);
             break;
             case PieceType.Queen:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_queen : w_queen);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_queen : w_queen);
             break;
 
         }
@@ -160,9 +162,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
     public void SetBoardIndex(int file, int rank) {
         indexText.SetText(string.Concat(file,",",rank));
     }
-    public void OnPointerDown(PointerEventData eventData) {
-        CalculateAvailableDirection();
-    }
+    
 
     public List<BoardPieceHolder> GetAvailableMoves(){
         return boardPieceHoldersToMove;

@@ -15,9 +15,6 @@ public class Board : MonoBehaviour {
     [SerializeField] private Vector2[] directionToCheckRook,directionToCheckBishop,directionToCheckKing,directionToCheckQueen;
     [SerializeField] private List<BoardPieceHolder> boardPieceHoldersList;
 
-    /* private void Start() {
-        SetUp();
-    } */
     public void SetUp(){
         board = new BoardPieceHolder[BOARD_SIZE,BOARD_SIZE];
         for (int i = 0; i < BOARD_SIZE; i++) {

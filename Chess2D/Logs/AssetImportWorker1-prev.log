@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2022.3/staging' branch; Version is '2022.3.24f1 (334eb2a0b267) revision 3362482'; Using compiler version '192829333'; Build Type 'Release'
+Built from '2022.3/staging' branch; Version is '2022.3.44f1 (c3ae09b9f03c) revision 12824073'; Using compiler version '192829333'; Build Type 'Release'
 OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 7937 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.44f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,7 +15,7 @@ C:/Users/Abhis/OneDrive/Documents/Game Dev Projects/Unity Game Project/Chess-2D-
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51651
+63164
 Successfully changed project path to: C:/Users/Abhis/OneDrive/Documents/Game Dev Projects/Unity Game Project/Chess-2D-Mobile/Chess2D
 C:/Users/Abhis/OneDrive/Documents/Game Dev Projects/Unity Game Project/Chess-2D-Mobile/Chess2D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,17 @@ C:/Users/Abhis/OneDrive/Documents/Game Dev Projects/Unity Game Project/Chess-2D-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18692] Host "[IP] 192.168.246.75 [Port] 0 [Flags] 2 [Guid] 1839223082 [EditorId] 1839223082 [Version] 1048832 [Id] WindowsEditor(7,Abhishek_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18416]  Target information:
 
-Player connection [18692] Host "[IP] 192.168.246.75 [Port] 0 [Flags] 2 [Guid] 1839223082 [EditorId] 1839223082 [Version] 1048832 [Id] WindowsEditor(7,Abhishek_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18416]  * "[IP] 192.168.246.75 [Port] 0 [Flags] 2 [Guid] 1212669041 [EditorId] 1212669041 [Version] 1048832 [Id] WindowsEditor(7,Abhishek_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 27.07 ms, found 4 plugins.
+Player connection [18416] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18416] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 27.76 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2022.3.24f1 (334eb2a0b267)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2022.3.44f1 (c3ae09b9f03c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Abhis/OneDrive/Documents/Game Dev Projects/Unity Game Project/Chess-2D-Mobile/Chess2D/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -67,59 +69,59 @@ Direct3D:
     VRAM:     3964 MB
     Driver:   32.0.15.5612
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013352 seconds.
-- Loaded All Assemblies, in  0.733 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017598 seconds.
+- Loaded All Assemblies, in  0.940 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1227 ms
+Android Extension - Scanning For ADB Devices 1199 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.759 seconds
-Domain Reload Profiling: 2491ms
-	BeginReloadAssembly (261ms)
+- Finished resetting the current domain, in  2.320 seconds
+Domain Reload Profiling: 3260ms
+	BeginReloadAssembly (332ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (114ms)
-	LoadAllAssembliesAndSetupDomain (273ms)
-		LoadAssemblies (255ms)
+	RebuildCommonClasses (103ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (146ms)
+	LoadAllAssembliesAndSetupDomain (328ms)
+		LoadAssemblies (326ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (268ms)
-			TypeCache.Refresh (264ms)
-				TypeCache.ScanAssembly (240ms)
+		AnalyzeDomain (325ms)
+			TypeCache.Refresh (323ms)
+				TypeCache.ScanAssembly (300ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (1761ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2322ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1657ms)
+		SetupLoadedEditorAssemblies (2196ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1404ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (1363ms)
+			SetLoadedEditorAssemblies (15ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (170ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (558ms)
+			ProcessInitializeOnLoadMethodAttributes (256ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
+Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.284 seconds
-Refreshing native plugins compatible for Editor in 14.71 ms, found 4 plugins.
+- Loaded All Assemblies, in  3.082 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,47 +129,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.072 seconds
-Domain Reload Profiling: 2356ms
-	BeginReloadAssembly (207ms)
+- Finished resetting the current domain, in  2.524 seconds
+Domain Reload Profiling: 5597ms
+	BeginReloadAssembly (519ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (957ms)
-		LoadAssemblies (601ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (104ms)
+	RebuildNativeTypeToScriptingClass (50ms)
+	initialDomainReloadingComplete (216ms)
+	LoadAllAssembliesAndSetupDomain (2181ms)
+		LoadAssemblies (1553ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (485ms)
-			TypeCache.Refresh (404ms)
-				TypeCache.ScanAssembly (364ms)
-			ScanForSourceGeneratedMonoScriptInfo (56ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (1073ms)
+		AnalyzeDomain (933ms)
+			TypeCache.Refresh (816ms)
+				TypeCache.ScanAssembly (746ms)
+			ScanForSourceGeneratedMonoScriptInfo (85ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (2527ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (791ms)
+		SetupLoadedEditorAssemblies (1846ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (120ms)
-			ProcessInitializeOnLoadAttributes (505ms)
-			ProcessInitializeOnLoadMethodAttributes (112ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (213ms)
+			ProcessInitializeOnLoadAttributes (1261ms)
+			ProcessInitializeOnLoadMethodAttributes (260ms)
+			AfterProcessingInitializeOnLoad (50ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 11.82 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (67ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 102.12 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5700 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 86 unused Assets / (390.4 KB). Loaded Objects now: 6161.
-Memory consumption went from 228.9 MB to 228.5 MB.
-Total: 9.538400 ms (FindLiveObjects: 0.890400 ms CreateObjectMapping: 0.627400 ms MarkObjects: 7.435600 ms  DeleteObjects: 0.583100 ms)
+Unloading 5694 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (385.7 KB). Loaded Objects now: 6164.
+Memory consumption went from 219.7 MB to 219.3 MB.
+Total: 25.947100 ms (FindLiveObjects: 4.110100 ms CreateObjectMapping: 5.750200 ms MarkObjects: 12.290800 ms  DeleteObjects: 3.779400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,69 +186,313 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.978 seconds
-Refreshing native plugins compatible for Editor in 10.68 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.544 seconds
-Domain Reload Profiling: 4519ms
-	BeginReloadAssembly (366ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (88ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (501ms)
-		LoadAssemblies (668ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (30ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (3544ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (806ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (43ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (485ms)
-			ProcessInitializeOnLoadMethodAttributes (134ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 7.44 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5533 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (359.6 KB). Loaded Objects now: 6167.
-Memory consumption went from 200.4 MB to 200.1 MB.
-Total: 5.633000 ms (FindLiveObjects: 0.812500 ms CreateObjectMapping: 0.602500 ms MarkObjects: 4.003400 ms  DeleteObjects: 0.213000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 5706.488245 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x16 pieces/WhitePieces_WoodSimplified.png
+  artifactKey: Guid(81ac2bc66c7e4514197a133c3b5265c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x16 pieces/WhitePieces_WoodSimplified.png using Guid(81ac2bc66c7e4514197a133c3b5265c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '780edff118d9e5c91d3b5c38666af981') in 1.998704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006358 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '48e110389a02c1cd2e8b18faf608fe1c') in 0.044619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '04bea9dbbf0bbb727b3a230af4908c5c') in 0.048007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Packages/CSharpGenerator/Docs/README_RU.md
+  artifactKey: Guid(2b2405525fbfc0d4994b0a31f661ed8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Packages/CSharpGenerator/Docs/README_RU.md using Guid(2b2405525fbfc0d4994b0a31f661ed8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a5b8970870834be769795fdde449278c') in 0.038680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd9f9426a5eb120a3752a1fdc0505addf') in 0.037693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002326 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_persp_03.png
+  artifactKey: Guid(69da901aa39ecfa47ada766ea6256bd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_persp_03.png using Guid(69da901aa39ecfa47ada766ea6256bd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '781c70f1480c16886ba7b27a4338c8fc') in 0.112197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003415 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x16 pieces/BlackPieces_Simplified.png
+  artifactKey: Guid(bf6c1fbd0dab1bd49868784fd3185e87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x16 pieces/BlackPieces_Simplified.png using Guid(bf6c1fbd0dab1bd49868784fd3185e87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e3ca7712031b9a532d91ff557abe35ad') in 0.070274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/W_King.png
+  artifactKey: Guid(d4d944fc7d0e3544f891b3d14bba3b1d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/W_King.png using Guid(d4d944fc7d0e3544f891b3d14bba3b1d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bd8a167873c287854debab37adf89360') in 0.053387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
+  artifactKey: Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '163187f246bbbcdce8443a9f7a81e79f') in 0.203402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/_Assets/_Scripts/HoveringPieceView.cs
+  artifactKey: Guid(e712c5760017aa64dad38bd3f22ad58d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Scripts/HoveringPieceView.cs using Guid(e712c5760017aa64dad38bd3f22ad58d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9415b71221b854d820be3329f076cbc8') in 0.015128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Packages/CSharpGenerator/Scripts/Extensions.cs
+  artifactKey: Guid(eaf5720e77c714f598d804dadbd7ddbd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Packages/CSharpGenerator/Scripts/Extensions.cs using Guid(eaf5720e77c714f598d804dadbd7ddbd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '38ef5f42008fc4c2fc84aff979c25b8e') in 0.020001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '683711a473defc78d19582f6ebf0932c') in 0.025672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x16 pieces/BlackPieces.png
+  artifactKey: Guid(42c83b660321c1243be6ebbe971d23a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x16 pieces/BlackPieces.png using Guid(42c83b660321c1243be6ebbe971d23a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7490df36682adb897ebc6c3269a53607') in 0.058701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/WhitePiecesWood-Sheet.png
+  artifactKey: Guid(12c04f00b65ce244c926ae4875f38ec8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/WhitePiecesWood-Sheet.png using Guid(12c04f00b65ce244c926ae4875f38ec8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7d349c7b3ba8f85f8cb2a12a4d067b34') in 0.057777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '535e8c91c8a94ef22dd8f77f9865e1fb') in 0.021814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/_Assets/_Prefabs/Board Piece View.prefab
+  artifactKey: Guid(042caf5efa6fdb14baa8ceb3131832cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Prefabs/Board Piece View.prefab using Guid(042caf5efa6fdb14baa8ceb3131832cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '147bc0e2b87711bb38bde255b3de13dd') in 0.266489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/BlackPiecesWood-Sheet.png
+  artifactKey: Guid(0312bfc9bb4173f4faa744a68f3c1fb4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/BlackPiecesWood-Sheet.png using Guid(0312bfc9bb4173f4faa744a68f3c1fb4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a19100ba536d8170f2f373ee825e69a7') in 0.079102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  artifactKey: Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader using Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '01bba009e270916beff529a2dffbbfd6') in 0.028056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_plain_02.png
+  artifactKey: Guid(9b030ec19244f984e93baaa47f2d0c38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_plain_02.png using Guid(9b030ec19244f984e93baaa47f2d0c38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '26baf259ddafc0527b8729a59ec171ec') in 0.033191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+  artifactKey: Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader using Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b38a69cdc89ed997b6de4c810fad974e') in 0.015009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Packages/CSharpGenerator/Demo/CSharpGeneratorDemo.asmdef
+  artifactKey: Guid(b9ae38d709c11204da5265f698db7552) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Packages/CSharpGenerator/Demo/CSharpGeneratorDemo.asmdef using Guid(b9ae38d709c11204da5265f698db7552) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6ed3e0cb4c4f59baacf5e7b72e7e731c') in 0.013617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_plain_03.png
+  artifactKey: Guid(2a999d4873d0e77439377af363626090) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_plain_03.png using Guid(2a999d4873d0e77439377af363626090) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3275083fdaa520a804ed7302fe0eb321') in 0.056324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a45b80f878620239c0801e6054b4e5f8') in 0.029010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_plain_04.png
+  artifactKey: Guid(1ea5d53492bb5eb4d8a7f143e246e84d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_plain_04.png using Guid(1ea5d53492bb5eb4d8a7f143e246e84d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a4c8c132f41cdfce2f15f6fa98e64695') in 0.061880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/W_Rook.png
+  artifactKey: Guid(d9264b6b06db13f48a2c607a798456c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/W_Rook.png using Guid(d9264b6b06db13f48a2c607a798456c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6cb2f49642538703bbe9a1d751b3c9f4') in 0.050140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '635b19ab52716253ea37642a410e60a4') in 0.197165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.007501 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_persp_05.png
+  artifactKey: Guid(6fddcf6e58d7bde42af3820e46788e7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/boards/board_persp_05.png using Guid(6fddcf6e58d7bde42af3820e46788e7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6014d2abe609011ba12f72b1bd7d4081') in 0.070372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/Packages/CSharpGenerator/Scripts/NamespaceGenerator.cs
+  artifactKey: Guid(b36cb20a09dce4d31afc164d841d337c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Packages/CSharpGenerator/Scripts/NamespaceGenerator.cs using Guid(b36cb20a09dce4d31afc164d841d337c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e7f6894301744abf29d5fe5ead6021e9') in 0.027931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Settings/Scenes/URP2DSceneTemplate.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e87ba73feb00d533661884dba1699409') in 0.026035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/B_Knight.png
+  artifactKey: Guid(741a50ed43461ed46bd19a6677755b4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/B_Knight.png using Guid(741a50ed43461ed46bd19a6677755b4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6901f2d7da5c9d5b1dedb47eb7942239') in 0.048330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/B_Bishop.png
+  artifactKey: Guid(c814969510411ef479f5babb7eef5622) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/B_Bishop.png using Guid(c814969510411ef479f5babb7eef5622) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3842abcbe0e3275919f7c6e33b403d46') in 0.056121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/B_Rook.png
+  artifactKey: Guid(8a0d30b562ee7a84d87b347b6ce43423) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/16x32 pieces/B_Rook.png using Guid(8a0d30b562ee7a84d87b347b6ce43423) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fb2aaf525ee5d01244b046e01a765f1b') in 0.030009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+  artifactKey: Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader using Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cd708f40162bf1a2ccb6c0b93469681b') in 0.042918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001215 seconds.
+  path: Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/README.txt
+  artifactKey: Guid(37c336a6337f9534fbf7cd18ff46ac86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/_Assets/_Textures/pixel chess_v1.2/pixel chess_v1.2/README.txt using Guid(37c336a6337f9534fbf7cd18ff46ac86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6514c02149aeff9ca17fa485711bc840') in 0.012804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
