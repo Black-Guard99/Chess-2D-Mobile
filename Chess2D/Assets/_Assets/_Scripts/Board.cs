@@ -59,7 +59,7 @@ public class Board : MonoBehaviour {
         foreach(Vector2 direction in directionToCheckRook){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
+                // Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -92,7 +92,6 @@ public class Board : MonoBehaviour {
             }
         }
         Vector2[] takeDirection = new Vector2[]{new Vector2(1,directionToCheckPawn.y),new Vector2(-1,directionToCheckPawn.y)};
-        Debug.Log(takeDirection);
         for (int i = 0; i < takeDirection.Length; i++) {
             Vector2 nextCoords = startingPoint + takeDirection[i] * squareSize;
             if(CheckCoordsInsideBoard(nextCoords)){
@@ -110,11 +109,11 @@ public class Board : MonoBehaviour {
     }
     public List<BoardPieceHolder> GetKingMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
         boardPieceHoldersList = new List<BoardPieceHolder>();
-        float range = 2;
+        float range = 1;
         foreach(Vector2 direction in directionToCheckKing){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
+                // Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -135,7 +134,7 @@ public class Board : MonoBehaviour {
         boardPieceHoldersList = new List<BoardPieceHolder>();
         for (int i = 0; i < knightCheckOffset.Length; i++) {
             Vector2 nextCoords = startingPoint + knightCheckOffset[i] * squareSize;
-            Debug.Log("Coord: " + nextCoords);
+            // Debug.Log("Coord: " + nextCoords);
             if(CheckCoordsInsideBoard(nextCoords)){
                 BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                 if(piece.IsOpponent(friendlyPieceType) || piece.IsEmptyPiece()){
@@ -153,7 +152,7 @@ public class Board : MonoBehaviour {
         foreach(Vector2 direction in directionToCheckBishop){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
+                // Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -176,7 +175,7 @@ public class Board : MonoBehaviour {
         foreach(Vector2 direction in directionToCheckQueen){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
+                // Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
