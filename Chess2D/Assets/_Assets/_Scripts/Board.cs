@@ -228,13 +228,18 @@ public class Board : MonoBehaviour {
         }
         return pieceHolders;
     }
-    public async void CheckGameOver(BoardPieceHolder lastRunPiece){
+    public void CheckGameOver(BoardPieceHolder lastRunPiece){
         ChessGameController.Instance.UpdateBoard();
-        Debug.Log("Turn Change: " + lastRunPiece.GetPiece().pieceType.ToString());
+        if(IsOpponentKingCheck(lastRunPiece)){
+            Debug.Log("check Mate");
+            return;
+        }
+        ChessGameController.Instance.ChangePlayers();
+        /* Debug.Log("Turn Change: " + lastRunPiece.GetPiece().pieceType.ToString());
         var pieceToMove = lastRunPiece.GetAllPositionToMove();
         pieceToMove.ForEach(p => p.SetYellow());
-        // await Task.Delay(1000);
-        // pieceToMove.ForEach(p => p.ResetColor());
+        await Task.Delay(500);
+        pieceToMove.ForEach(p => p.ResetColor());
         var opponentKingPiece = ChessGameController.Instance.GetOpponentChessPlayer().allPieces.FirstOrDefault(k => k.GetPiece().pieceType == PieceType.King);
         if(opponentKingPiece == null){
             Debug.LogError("No Opponent King piece found");
@@ -262,6 +267,70 @@ public class Board : MonoBehaviour {
             await Task.Delay(800);
             availableMove.ForEach(p => p.ResetColor());
             
+        } */
+    }
+    public bool IsOpponentKingCheck(BoardPieceHolder lastRunPiece){
+        var activePlayer = ChessGameController.Instance.GetActiveChessPlayer();
+        var currentOpponent = ChessGameController.Instance.GetOpponentChessPlayer();
+        
+        // Find the opponent's king piece
+        var opponentKingPiece = currentOpponent.allPieces.FirstOrDefault(p => p.GetPiece().pieceType == PieceType.King);
+        if (opponentKingPiece == null) {
+            Debug.Log("No Opponent King piece found");
+            return false;
+        }
+        Debug.Log("Opponent King: " + opponentKingPiece.GetPiece().pieceType + " " + opponentKingPiece.GetPiece().colorType);
+
+        // Get all available moves for the opponent's king
+        List<BoardPieceHolder> opponentKingMoves = opponentKingPiece.GetAllAvailableCanMoveToPieces();
+
+        // Gather all of the active player's available attacking moves
+        List<BoardPieceHolder> attackingPositions = new List<BoardPieceHolder>();
+        foreach (var piece in activePlayer.allPieces) {
+            attackingPositions.AddRange(piece.GetAllAvailableCanMoveToPieces());
+        }
+
+        // Check if the opponent's king is in check
+        if (!attackingPositions.Contains(opponentKingPiece)) {
+            Debug.Log("Opponent King is Not in Check!");
+            return false;
+        }
+        
+        // Identify potential moves that the king could take to escape check
+        List<BoardPieceHolder> safeKingMoves = opponentKingMoves.Where(move => !attackingPositions.Contains(move)).ToList();
+        safeKingMoves.ForEach(p => p.SetYellow(Color.blue)); // Highlight safe moves
+        attackingPositions.ForEach(p => p.SetYellow(Color.magenta)); // Highlight attacking positions
+        
+        // Debug log for king's available moves
+        Debug.Log($"{currentOpponent.colorType} Opponent King Available Moves: {safeKingMoves.Count}");
+        
+        // If there are no safe moves, check if any opponent piece can block or capture the checking piece
+        if (safeKingMoves.Count == 0) {
+            Debug.LogError($"{currentOpponent.colorType} Opponent King Cannot Move to a Safe Place");
+            
+            // Check if other pieces can help block or move the king to safety
+            bool isSafe = false;
+            var opponentsOtherPieces = currentOpponent.allPieces.Where(p => p.GetPiece().pieceType != PieceType.King).ToList();
+            
+            foreach (var opponentPiece in opponentsOtherPieces) {
+                var opponentPieceMoves = opponentPiece.GetAllAvailableCanMoveToPieces();
+                if (opponentPieceMoves.Any(move => safeKingMoves.Contains(move))) {
+                    isSafe = true;
+                    break;
+                }
+            }
+
+            if (isSafe) {
+                Debug.Log($"{currentOpponent.colorType} Opponent King is Safe (Other Piece can help)");
+                return false;
+            } else {
+                Debug.LogError($"{currentOpponent.colorType} Opponent King has No Safe Moves and Cannot Escape Check");
+                return true;
+            }
+        } else {
+            // If there are safe moves, continue the game
+            // ChessGameController.Instance.ChangePlayers();
+            return false;
         }
     }
 

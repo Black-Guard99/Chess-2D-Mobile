@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ChessGameController : MonoBehaviour {
@@ -33,10 +34,15 @@ public class ChessGameController : MonoBehaviour {
     public ChessGamePlayer GetOpponentChessPlayer(){
         return activePlayer.colorType == whitePlayer.colorType ? blackPlayer : whitePlayer;
     }
+    public ChessGamePlayer GetActiveChessPlayer(){
+        return activePlayer;
+    }
+    public bool CanPlay(ColorType colorType){
+        return activePlayer.colorType == colorType;
+    }
 
     public void UpdateBoard() {
-        whitePlayer.allPieces = board.GetPiecesByColorType(ColorType.White);
-
-        blackPlayer.allPieces = board.GetPiecesByColorType(ColorType.Black);
+        whitePlayer.allPieces = new List<BoardPieceHolder>(board.GetPiecesByColorType(ColorType.White));
+        blackPlayer.allPieces = new List<BoardPieceHolder>(board.GetPiecesByColorType(ColorType.Black));
     }
 }

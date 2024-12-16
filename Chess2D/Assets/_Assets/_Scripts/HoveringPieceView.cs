@@ -10,14 +10,17 @@ public class HoveringPieceView : MonoBehaviour,IBeginDragHandler,IDragHandler,IE
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private BoardPieceHolder boardPieceHolder;
     [SerializeField] private Piece holderPieceData;
-    
-
+    private bool canDrag;
     public void Init(Canvas canvas,BoardPieceHolder boardPieceHolder){
         this.canvas = canvas;
         this.boardPieceHolder = boardPieceHolder;
     }
-    
     public void OnBeginDrag(PointerEventData eventData) {
+        if(!ChessGameController.Instance.CanPlay(boardPieceHolder.GetColorType())){
+            canDrag = false;
+            return;
+        }
+        canDrag = true;
         canvasGroup.blocksRaycasts = false;
         holderPieceData = boardPieceHolder.GetPiece();
         activeView.SetParent(canvas.transform);
@@ -25,13 +28,16 @@ public class HoveringPieceView : MonoBehaviour,IBeginDragHandler,IDragHandler,IE
     }
 
     public void OnDrag(PointerEventData eventData) {
-        activeView.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if(canDrag){
+            activeView.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData) {
         Debug.Log("Dropping: " + eventData.pointerDrag.transform.name);
         canvasGroup.blocksRaycasts = true;
         ResetPos();
+        canDrag = false;
     }
     public void ResetHolderPiece(){
         boardPieceHolder.SetPiece(new Piece{pieceType = PieceType.None,colorType = ColorType.None});
@@ -54,4 +60,6 @@ public class HoveringPieceView : MonoBehaviour,IBeginDragHandler,IDragHandler,IE
     public BoardPieceHolder GetBoardPieceHolder() {
         return boardPieceHolder;
     }
+
+    
 }

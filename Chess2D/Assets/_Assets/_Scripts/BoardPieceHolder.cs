@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using System;
+using System.Threading.Tasks;
 
 public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
     [SerializeField] private HoveringPieceView hoveringPieceView;
@@ -37,10 +38,10 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
                 hoveringBox.ResetHolderPiece();
                 SetPiece(hoveringBox.GetPiece());
                 ResetColor();
+                Board.Instance.CheckGameOver(this);
             }
         }
         pieceTypeText.SetText(GetPiece().pieceType.ToString());
-        Board.Instance.CheckGameOver(this);
     }
     public bool CanDropOn(BoardPieceHolder boardPieceHolder){
         return boardPieceHolder.GetAvailableMoves().Contains(this);
@@ -106,15 +107,16 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
             _ => new List<BoardPieceHolder>(),
         };
         foreach (var pieceToMove in boardPieceHoldersToMove){
-            // Debug.Log("Piece: " + pieceToMove.GetPiece().pieceType);
             pieceToMove.HighlightColor(pieceToMove.OpponentSquare(piece.colorType));
         }
     }
     public void HighlightColor(bool IsOpponentColor){
         pieceBg.color = IsOpponentColor ? opponentSquareColor : freeSquareHightingColor;
     }
-    public void SetYellow(){
-        pieceBg.color = Color.yellow;
+    public async void SetYellow(Color customColor){
+        pieceBg.color = customColor;
+        await Task.Delay(1000);
+        pieceBg.color = originalColor;
     }
     public void ResetColor(){
         pieceBg.color = originalColor;
@@ -154,13 +156,14 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
 
     }
     public void OnPointerDown(PointerEventData eventData) {
+        if(!ChessGameController.Instance.CanPlay(piece.colorType)) return;
         CalculateAvailableDirection();
     }
 
     public List<BoardPieceHolder> GetAvailableMoves(){
         return boardPieceHoldersToMove;
     }
-    public List<BoardPieceHolder> GetAllPositionToMove(){
+    public List<BoardPieceHolder> GetAllAvailableCanMoveToPieces(){
         List<BoardPieceHolder> moveToPiece = piece.pieceType switch
         {
             PieceType.Bishop => board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
@@ -190,7 +193,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
         foreach (var pieceToMove in boardPieceHoldersToMove){
             Debug.Log("Piece: " + pieceToMove.GetPiece().pieceType);
             // pieceToMove.HighlightColor(pieceToMove.OpponentSquare(piece.colorType));
-            pieceToMove.SetYellow();
+            pieceToMove.SetYellow(Color.yellow);
         }
     }
 }
