@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ChessGameController : MonoBehaviour {
     public static ChessGameController Instance{get;private set;}
     [SerializeField] private Board board;
-
     [SerializeField] private ChessGamePlayer whitePlayer,blackPlayer;
     [SerializeField] private ChessGamePlayer activePlayer;
 

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class HoveringPieceView : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHandler {
+public class PieceDragger : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHandler {
     [SerializeField] private Canvas canvas;
     [SerializeField] private Image visual;
     [SerializeField] private RectTransform activeView;
