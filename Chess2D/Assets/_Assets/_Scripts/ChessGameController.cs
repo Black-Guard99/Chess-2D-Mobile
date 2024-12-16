@@ -1,10 +1,16 @@
+using System;
 using UnityEngine;
 
 public class ChessGameController : MonoBehaviour {
+    public static ChessGameController Instance{get;private set;}
     [SerializeField] private Board board;
 
     [SerializeField] private ChessGamePlayer whitePlayer,blackPlayer;
     [SerializeField] private ChessGamePlayer activePlayer;
+
+    private void Awake() {
+        Instance = this;
+    }
     private void Start() {
         board.SetUp();
         
@@ -26,5 +32,11 @@ public class ChessGameController : MonoBehaviour {
     }
     public ChessGamePlayer GetOpponentChessPlayer(){
         return activePlayer.colorType == whitePlayer.colorType ? blackPlayer : whitePlayer;
+    }
+
+    public void UpdateBoard() {
+        whitePlayer.allPieces = board.GetPiecesByColorType(ColorType.White);
+
+        blackPlayer.allPieces = board.GetPiecesByColorType(ColorType.Black);
     }
 }

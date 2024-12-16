@@ -3,12 +3,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
+using System;
 
 public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
     [SerializeField] private HoveringPieceView hoveringPieceView;
     [SerializeField] private Color freeSquareHightingColor = Color.green,opponentSquareColor = Color.red;
     [SerializeField] private Color originalColor;
-    [SerializeField] private TextMeshProUGUI indexText;
+    [SerializeField] private TextMeshProUGUI indexText,pieceTypeText;
     [SerializeField] private RectTransform currentRect;
     [SerializeField] private Image pieceBg;
     [SerializeField] private Sprite b_king,w_king;
@@ -25,7 +27,6 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
         boardPieceHoldersToMove = new List<BoardPieceHolder>();
     }
     public void OnDrop(PointerEventData eventData) {
-        // Debug.Log("Dropping: " + eventData.pointerDrag.transform.name);
         if(eventData.pointerDrag.TryGetComponent(out HoveringPieceView hoveringBox)){
             if(CanDropOn(hoveringBox.GetBoardPieceHolder())){
                 if(piece != null){
@@ -38,7 +39,8 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
                 ResetColor();
             }
         }
-
+        pieceTypeText.SetText(GetPiece().pieceType.ToString());
+        Board.Instance.CheckGameOver(this);
     }
     public bool CanDropOn(BoardPieceHolder boardPieceHolder){
         return boardPieceHolder.GetAvailableMoves().Contains(this);
@@ -69,22 +71,22 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
                 hoveringPieceView.gameObject.SetActive(false);
             break;
             case PieceType.King:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_king : w_king);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_king : w_king);
             break;
             case PieceType.Pawn:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_pawn : w_pawn);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_pawn : w_pawn);
             break;
             case PieceType.Knight:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_knight : w_knight);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_knight : w_knight);
             break;
             case PieceType.Bishop:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_bishop : w_bishop);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_bishop : w_bishop);
             break;
             case PieceType.Rook:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_rook : w_rook);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_rook : w_rook);
             break;
             case PieceType.Queen:
-                hoveringPieceView.SetSprite(piece.colorType == ColorType.White? b_queen : w_queen);
+                hoveringPieceView.SetSprite(piece.colorType == ColorType.Black? b_queen : w_queen);
             break;
 
         }
@@ -93,36 +95,26 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
         return piece.activePos;
     }
     public void CalculateAvailableDirection(){
-        switch(piece.pieceType){
-            default:
-                boardPieceHoldersToMove = new List<BoardPieceHolder>();
-            break;
-            case PieceType.Bishop:
-                boardPieceHoldersToMove = board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
-            break;
-            case PieceType.King:
-                boardPieceHoldersToMove = board.GetKingMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
-            break;
-            case PieceType.Knight:
-                boardPieceHoldersToMove = board.GetKnightMoveDirection(piece.activePos,piece.colorType);
-            break;
-            case PieceType.Pawn:
-                boardPieceHoldersToMove = board.GetPawnMoveToDirectionsFromStartingPoint(hasMoved,piece.activePos,piece.colorType);
-            break;
-            case PieceType.Queen:
-                boardPieceHoldersToMove = board.GetQueenMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
-            break;
-            case PieceType.Rook:
-                boardPieceHoldersToMove = board.GetRookMoveToDirectionsFromStartingPoint(piece.activePos,piece.colorType);
-            break;
-        }
-        foreach(var pieceToMove in boardPieceHoldersToMove){
-            Debug.Log("Piece: " + pieceToMove.GetPiece().pieceType);
+        boardPieceHoldersToMove = piece.pieceType switch
+        {
+            PieceType.Bishop => board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.King => board.GetKingMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.Knight => board.GetKnightMoveDirection(piece.activePos, piece.colorType),
+            PieceType.Pawn => board.GetPawnMoveToDirectionsFromStartingPoint(hasMoved, piece.activePos, piece.colorType),
+            PieceType.Queen => board.GetQueenMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.Rook => board.GetRookMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            _ => new List<BoardPieceHolder>(),
+        };
+        foreach (var pieceToMove in boardPieceHoldersToMove){
+            // Debug.Log("Piece: " + pieceToMove.GetPiece().pieceType);
             pieceToMove.HighlightColor(pieceToMove.OpponentSquare(piece.colorType));
         }
     }
     public void HighlightColor(bool IsOpponentColor){
         pieceBg.color = IsOpponentColor ? opponentSquareColor : freeSquareHightingColor;
+    }
+    public void SetYellow(){
+        pieceBg.color = Color.yellow;
     }
     public void ResetColor(){
         pieceBg.color = originalColor;
@@ -159,6 +151,7 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
     }
     public void SetBoardIndex(int file, int rank) {
         indexText.SetText(string.Concat(file,",",rank));
+
     }
     public void OnPointerDown(PointerEventData eventData) {
         CalculateAvailableDirection();
@@ -166,5 +159,38 @@ public class BoardPieceHolder : MonoBehaviour,IDropHandler,IPointerDownHandler{
 
     public List<BoardPieceHolder> GetAvailableMoves(){
         return boardPieceHoldersToMove;
+    }
+    public List<BoardPieceHolder> GetAllPositionToMove(){
+        List<BoardPieceHolder> moveToPiece = piece.pieceType switch
+        {
+            PieceType.Bishop => board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.King => board.GetKingMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.Knight => board.GetKnightMoveDirection(piece.activePos, piece.colorType),
+            PieceType.Pawn => board.GetPawnMoveToDirectionsFromStartingPoint(hasMoved, piece.activePos, piece.colorType),
+            PieceType.Queen => board.GetQueenMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.Rook => board.GetRookMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            _ => new List<BoardPieceHolder>(),
+        };
+        return moveToPiece;
+
+    }
+
+    public void getAvailableMovesToGo() {
+        boardPieceHoldersToMove = new List<BoardPieceHolder>();
+        boardPieceHoldersToMove = piece.pieceType switch
+        {
+            PieceType.Bishop => board.GetBishopMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.King => board.GetKingMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.Knight => board.GetKnightMoveDirection(piece.activePos, piece.colorType),
+            PieceType.Pawn => board.GetPawnMoveToDirectionsFromStartingPoint(hasMoved, piece.activePos, piece.colorType),
+            PieceType.Queen => board.GetQueenMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            PieceType.Rook => board.GetRookMoveToDirectionsFromStartingPoint(piece.activePos, piece.colorType),
+            _ => new List<BoardPieceHolder>(),
+        };
+        foreach (var pieceToMove in boardPieceHoldersToMove){
+            Debug.Log("Piece: " + pieceToMove.GetPiece().pieceType);
+            // pieceToMove.HighlightColor(pieceToMove.OpponentSquare(piece.colorType));
+            pieceToMove.SetYellow();
+        }
     }
 }

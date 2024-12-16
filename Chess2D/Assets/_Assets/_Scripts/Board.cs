@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 public class Board : MonoBehaviour {
+    public static Board Instance{get;private set;}
     private const int BOARD_SIZE = 8;
     private const string findString = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
     [SerializeField] private Canvas canvas;
@@ -14,10 +16,13 @@ public class Board : MonoBehaviour {
     [SerializeField] private Vector2[] knightCheckOffset;
     [SerializeField] private Vector2[] directionToCheckRook,directionToCheckBishop,directionToCheckKing,directionToCheckQueen;
     [SerializeField] private List<BoardPieceHolder> boardPieceHoldersList;
-
-    /* private void Start() {
-        SetUp();
-    } */
+    private void Awake() {
+        if(Instance == null){
+            Instance = this;
+        }else{
+            Destroy(Instance.gameObject);
+        }
+    }
     public void SetUp(){
         board = new BoardPieceHolder[BOARD_SIZE,BOARD_SIZE];
         for (int i = 0; i < BOARD_SIZE; i++) {
@@ -62,7 +67,6 @@ public class Board : MonoBehaviour {
         foreach(Vector2 direction in directionToCheckRook){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -95,7 +99,7 @@ public class Board : MonoBehaviour {
             }
         }
         Vector2[] takeDirection = new Vector2[]{new Vector2(1,directionToCheckPawn.y),new Vector2(-1,directionToCheckPawn.y)};
-        Debug.Log(takeDirection);
+        // Debug.Log(takeDirection);
         for (int i = 0; i < takeDirection.Length; i++) {
             Vector2 nextCoords = startingPoint + takeDirection[i] * squareSize;
             if(CheckCoordsInsideBoard(nextCoords)){
@@ -113,11 +117,10 @@ public class Board : MonoBehaviour {
     }
     public List<BoardPieceHolder> GetKingMoveToDirectionsFromStartingPoint(Vector2 startingPoint,ColorType friendlyPieceType){
         boardPieceHoldersList = new List<BoardPieceHolder>();
-        float range = 2;
+        float range = 1;
         foreach(Vector2 direction in directionToCheckKing){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -131,6 +134,7 @@ public class Board : MonoBehaviour {
                 }
             }
         }
+        // Debug.Log("King Check Coord: " + boardPieceHoldersList.Count);
         return boardPieceHoldersList;
 
     }
@@ -138,7 +142,7 @@ public class Board : MonoBehaviour {
         boardPieceHoldersList = new List<BoardPieceHolder>();
         for (int i = 0; i < knightCheckOffset.Length; i++) {
             Vector2 nextCoords = startingPoint + knightCheckOffset[i] * squareSize;
-            Debug.Log("Coord: " + nextCoords);
+            // Debug.Log("Coord: " + nextCoords);
             if(CheckCoordsInsideBoard(nextCoords)){
                 BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                 if(piece.IsOpponent(friendlyPieceType) || piece.IsEmptyPiece()){
@@ -156,7 +160,7 @@ public class Board : MonoBehaviour {
         foreach(Vector2 direction in directionToCheckBishop){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
+                // Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -179,7 +183,7 @@ public class Board : MonoBehaviour {
         foreach(Vector2 direction in directionToCheckQueen){
             for (int i = 1; i <= range; i++) {
                 Vector2 nextCoords = startingPoint + direction * squareSize * i;
-                Debug.Log("Coord: " + nextCoords);
+                // Debug.Log("Coord: " + nextCoords);
                 if(CheckCoordsInsideBoard(nextCoords)){
                     BoardPieceHolder piece = GetBoardCoordFromPos(nextCoords);
                     if(piece.IsEmptyPiece()){
@@ -206,7 +210,6 @@ public class Board : MonoBehaviour {
     public bool CheckCoordsInsideBoard(Vector2 pos){
         int x = Mathf.FloorToInt(pos.x / squareSize);
         int y = Mathf.FloorToInt(pos.y / squareSize);
-        // Debug.Log("x: " + x + "Y : " + y);
         if(x < 0 || y < 0 || x >= BOARD_SIZE || y >= BOARD_SIZE || x <= -BOARD_SIZE || y <= -BOARD_SIZE){
             return false;
         }
@@ -224,6 +227,42 @@ public class Board : MonoBehaviour {
             }
         }
         return pieceHolders;
+    }
+    public async void CheckGameOver(BoardPieceHolder lastRunPiece){
+        ChessGameController.Instance.UpdateBoard();
+        Debug.Log("Turn Change: " + lastRunPiece.GetPiece().pieceType.ToString());
+        var pieceToMove = lastRunPiece.GetAllPositionToMove();
+        pieceToMove.ForEach(p => p.SetYellow());
+        // await Task.Delay(1000);
+        // pieceToMove.ForEach(p => p.ResetColor());
+        var opponentKingPiece = ChessGameController.Instance.GetOpponentChessPlayer().allPieces.FirstOrDefault(k => k.GetPiece().pieceType == PieceType.King);
+        if(opponentKingPiece == null){
+            Debug.LogError("No Opponent King piece found");
+            ChessGameController.Instance.ChangePlayers();
+            return;
+        }
+        if(pieceToMove.Contains(opponentKingPiece)){
+            pieceToMove.ForEach(p => p.ResetColor());
+            var currentMoveToPiece = lastRunPiece.GetAllPositionToMove();
+            var moveToGoForKing = opponentKingPiece.GetAllPositionToMove();
+            // opponentKingPiece.SetYellow();
+            List<BoardPieceHolder> availableMove = new List<BoardPieceHolder>();
+            foreach(var moveToMove in moveToGoForKing){
+                if(!currentMoveToPiece.Contains(moveToMove)){
+                    availableMove.Add(moveToMove);
+                }
+            }
+            Debug.Log("Available Move: " + availableMove.Count);
+            if(availableMove.Count == 0){
+                Debug.LogError("No available move for King");
+                ChessGameController.Instance.ChangePlayers();
+                return;
+            }
+            availableMove.ForEach(p => p.SetYellow());
+            await Task.Delay(800);
+            availableMove.ForEach(p => p.ResetColor());
+            
+        }
     }
 
 }
